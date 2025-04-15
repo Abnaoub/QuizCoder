@@ -1,0 +1,45 @@
+/* Start Reset CSS */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+/* End Reset CSS */
+
+/* Start Header */
+header {
+    display: flex;
+    padding: 36px;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 16px;
+}
+header a {
+    text-decoration: none;
+    color: black;
+}
+/* End Header */
+
+/* Start Main */
+main h1 {
+    text-align: center;
+}
+#school-subjects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+/* End Main */
