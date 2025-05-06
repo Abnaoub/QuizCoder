@@ -29,3 +29,28 @@ fetch('./data/school_subjects.json')
 
   })
   .catch(err => console.error(err));
+
+
+  // INTERAZIONI HTML-CSS
+  const header = document.getElementById("header");
+const hamburger = document.getElementById("burger");
+const nav = document.getElementById("nav-menu");
+
+// Header scroll effect
+if (header) {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 20) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
+}
+
+// Hamburger menu toggle
+if (hamburger && nav) {
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active"); // animazione burger
+    nav.classList.toggle("nav-active");   // mostra/nasconde il menu
+  });
+}
