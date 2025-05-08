@@ -5,7 +5,6 @@
     padding-top: 100px;
     padding-left: 2rem;
     padding-right: 2rem;
-    height: 1000px;
   }
 
   .scatole {
@@ -53,43 +52,3 @@
     transform: translateY(1px); /* Leggero spostamento verso il basso quando attivo */
     box-shadow: 1px 1px 3px rgba(142, 97, 245, 0.5); /* Ombra più sottile quando attivo */
   }
-
-  
-
-  /************************* FOOTER *************************/
-  .footer-sito {
-  background-color: #252746;
-  padding: 30px 15px;
-  text-align: center;
-  border-top: 1px solid grey;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  margin-top: 4rem;
-}
-
-.footer-container {
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 1rem;
-  flex-wrap: wrap;
-}
-
-.footer-links a {
-  text-decoration: none;
-  color: white;
-  transition: color 0.2s;
-}
-
-.footer-links a:hover {
-  color: #8e61f5;
-}
-
-.footer-copy {
-  color: #888;
-}
