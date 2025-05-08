@@ -20,8 +20,9 @@
     color: white;
     flex: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
     padding-right: 2rem;
     padding-left: 2rem;
   }

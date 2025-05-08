@@ -7,19 +7,20 @@ fetch('./data/school_subjects.json')
     for(let schoolSubject of data.school_subjects){
         //Create Anchor Tag as a school subject container
         let a = document.createElement('a')
-        a.className = 'school-subject-container';
+        a.className = 'school-subject-item';
         a.href = schoolSubject.slug;
+        a.style.backgroundColor = schoolSubject.color
         // Add School Subject Title
         let titleElement = document.createElement('h2');
         titleElement.textContent = schoolSubject.name
         a.appendChild(titleElement)
         // Add School Subject Image
-        let image = document.createElement('img');
-        image.src = `images/${schoolSubject.image}`;
-        image.alt = schoolSubject.title;
-        image.width = 300;
-        image.height = 300;
-        a.appendChild(image);
+        // let image = document.createElement('img');
+        // image.src = `images/${schoolSubject.image}`;
+        // image.alt = schoolSubject.title;
+        // image.width = 300;
+        // image.height = 300;
+        // a.appendChild(image);
         // Add School Subject Description
         let descriptionElement = document.createElement('p');
         descriptionElement.textContent = schoolSubject.description;

@@ -6,85 +6,31 @@
             "slug": "html",
             "image": "html.png",
             "description": "Esercitati su HTML",
-            "quizzes": [
-                {
-                    "id": "quizzes-1",
-                    "questions": [
-                        {
-                            "id": "questions-1",
-                            "title": "Quale tag HTML viene usato per creare un paragrafo?",
-                            "answers": [
-                                {
-                                    "id": "answer-1",
-                                    "title": "<p>",
-                                    "isCorrect": true
-                                },
-                                {
-                                    "id": "answer-2",
-                                    "title": "<paragraph>",
-                                    "isCorrect": false
-                                },
-                                {
-                                    "id": "answer-3",
-                                    "title": "<para>",
-                                    "isCorrect": false
-                                },
-                                {
-                                    "id": "answer-4",
-                                    "title": "<text>",
-                                    "isCorrect": false
-                                }
-                            ]
-                        },
-                        {
-                            "id": "questions-2",
-                            "title": "Quale attributo del tag <a> definisce l’indirizzo del link?",
-                            "answers": [
-                                {
-                                    "id": "answer-1",
-                                    "title": "src",
-                                    "isCorrect": false
-                                },
-                                {
-                                    "id": "answer-2",
-                                    "title": "href",
-                                    "isCorrect": true
-                                },
-                                {
-                                    "id": "answer-3",
-                                    "title": "link",
-                                    "isCorrect": false
-                                },
-                                {
-                                    "id": "answer-4",
-                                    "title": "url",
-                                    "isCorrect": false
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "color": "#E34C26"
         },
         {
             "id": "2",
             "name": "CSS",
-            "image": "css.png",
             "slug": "css",
-            "description": "Esercitati su CSS"
+            "image": "css.png",
+            "description": "Esercitati su CSS",
+            "color": "#264DE4"
         },
         {
             "id": "3",
             "name": "JavaScript",
             "slug": "javascript",
             "image": "js.png",
-            "description": "Esercitati su JavaScript"
+            "description": "Esercitati su JavaScript",
+            "color": "#F0DB4F"
         },
         {
             "id": "4",
-            "name": "JSON",
-            "slug": "json",
-            "description": "Esercitati su JSON"
+            "name": "Node.js",
+            "slug": "Node.js",
+            "image": "Node.png",
+            "description": "Esercitati su JSON",
+            "color": "#215732"
         }
     ]
 }

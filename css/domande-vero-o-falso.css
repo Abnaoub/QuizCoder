@@ -1,0 +1,27 @@
+#school-subjects {
+    margin: 32px auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.school-subject-item{
+    text-decoration: none;
+    color: white;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+.school-subject-item:hover{
+    border: 3px solid white;
+    color: black;
+    scale: 1.02;
+}
