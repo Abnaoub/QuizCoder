@@ -1,0 +1,36 @@
+{
+    "school_subjects": [
+        {
+            "id": "1",
+            "name": "HTML",
+            "slug": "html",
+            "image": "html.png",
+            "description": "Esercitati su HTML",
+            "color": "#E34C26"
+        },
+        {
+            "id": "2",
+            "name": "CSS",
+            "slug": "css",
+            "image": "css.png",
+            "description": "Esercitati su CSS",
+            "color": "#264DE4"
+        },
+        {
+            "id": "3",
+            "name": "JavaScript",
+            "slug": "javascript",
+            "image": "js.png",
+            "description": "Esercitati su JavaScript",
+            "color": "#F0DB4F"
+        },
+        {
+            "id": "4",
+            "name": "Node.js",
+            "slug": "Node.js",
+            "image": "Node.png",
+            "description": "Esercitati su JSON",
+            "color": "#215732"
+        }
+    ]
+}
