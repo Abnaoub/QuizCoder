@@ -33,6 +33,9 @@ main {
   transition: all 0.3s ease-in-out;
   width: 100%;
   height: 300px;
+  background: #865ce8;
+  transform: translateY(1px); /* Leggero spostamento verso il basso quando attivo */
+  box-shadow: 1px 1px 3px rgba(142, 97, 245, 0.5); /* Ombra più sottile quando attivo */
 }
 
 

@@ -1,4 +1,4 @@
-<!--------------------------INIZIO HEADER ------------------------------->
+const header = `
     <header class="header" id="header">
       <a href="/" class="logo">QuizCoder</a>
       <label class="burger" for="burger">
@@ -28,5 +28,6 @@
         <a href="#" class="sign-up">Sign Up</a>
       </div>
     </header>
+`;
 
-    <!--------------------------FINE HEADER ------------------------------->
+document.body.insertAdjacentHTML('afterbegin', header)

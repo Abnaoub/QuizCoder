@@ -24,7 +24,7 @@
 
   .box {
     color: white;
-    text-shadow: 2px 2px 2px purple;
+    /* text-shadow: 2px 2px 2px purple; */
     flex-grow: 0;
     height: 200px;
     width: 800px;

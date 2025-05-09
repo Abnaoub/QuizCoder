@@ -1,4 +1,4 @@
-<!------------------------------- INIZIO FOOTER ------------------------------->
+const footer = `
     <footer class="footer-sito">
       <div class="footer-container">
         <div class="footer-links">
@@ -11,5 +11,6 @@
         </p>
       </div>
     </footer>
+`;
 
-<!------------------------------- FINE FOOTER ------------------------------->
+document.body.insertAdjacentHTML('beforeend', footer)

@@ -1,70 +1,75 @@
 {
-    "quizzes": [
-        {
-            "id": "1",
-            "name": "Quiz 1",
-            "slug": "html-quiz-1",
-            "school_subject_slug": "html"
-        },
-        {
-            "id": "2",
-            "name": "Quiz 2",
-            "slug": "html-quiz-2",
-            "school_subject_slug": "html"
-        },
-        {
-            "id": "3",
-            "name": "Quiz 3",
-            "slug": "html-quiz-3",
-            "school_subject_slug": "html"
-        },
-        {
-            "id": "4",
-            "name": "Quiz 4",
-            "slug": "html-quiz-4",
-            "school_subject_slug": "html"
-        },
-        {
-            "id": "5",
-            "name": "Quiz 5",
-            "slug": "html-quiz-5",
-            "school_subject_slug": "html"
-        },
-        {
-            "id": "6",
-            "name": "Quiz 6",
-            "slug": "quiz-6",
-            "school_subject_slug": "html"
-        },
-        {
-            "id": "7",
-            "name": "Quiz 7",
-            "slug": "quiz-7",
-            "school_subject_slug": "html"
-        },
-        {
-            "id": "8",
-            "name": "Quiz 8",
-            "slug": "quiz-8",
-            "school_subject_slug": "html"
-        },
-        {
-            "id": "9",
-            "name": "Quiz 9",
-            "slug": "quiz-9",
-            "school_subject_slug": "html"
-        },
-        {
-            "id": "10",
-            "name": "Quiz 10",
-            "slug": "quiz-10",
-            "school_subject_slug": "html"
-        },
-        {
-            "id": "11",
-            "name": "Quiz 1",
-            "slug": "quiz-1",
-            "school_subject_slug": "css"
-        }
-    ]
+  "quizzes": [
+    {
+      "id": "1",
+      "name": "Quiz 1",
+      "slug": "html-quiz-1",
+      "language_slug": "html",
+      "type": "scelta-multipla"
+    },
+    {
+      "id": "2",
+      "name": "Quiz 2",
+      "slug": "html-quiz-2",
+      "language_slug": "html",
+      "type": "vero-o-falso"
+    },
+    {
+      "id": "3",
+      "name": "Quiz 3",
+      "slug": "html-quiz-3",
+      "language_slug": "html",
+      "type": "scelta-multipla"
+    },
+    {
+      "id": "4",
+      "name": "Quiz 4",
+      "slug": "html-quiz-4",
+      "language_slug": "html",
+      "type": "vero-o-falso"
+    },
+    {
+      "id": "5",
+      "name": "Quiz 5",
+      "slug": "html-quiz-5",
+      "language_slug": "html",
+      "type": "vero-o-falso"
+    },
+    {
+      "id": "6",
+      "name": "Quiz 6",
+      "slug": "quiz-6",
+      "language_slug": "html"
+    },
+    {
+      "id": "7",
+      "name": "Quiz 7",
+      "slug": "quiz-7",
+      "language_slug": "html"
+    },
+    {
+      "id": "8",
+      "name": "Quiz 8",
+      "slug": "quiz-8",
+      "language_slug": "html"
+    },
+    {
+      "id": "9",
+      "name": "Quiz 9",
+      "slug": "quiz-9",
+      "language_slug": "html"
+    },
+    {
+      "id": "10",
+      "name": "Quiz 10",
+      "slug": "quiz-10",
+      "language_slug": "html"
+    },
+    {
+      "id": "11",
+      "name": "Quiz 1",
+      "slug": "quiz-1",
+      "language_slug": "css"
+    }
+  ]
 }
