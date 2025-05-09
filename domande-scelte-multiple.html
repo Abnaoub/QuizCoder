@@ -19,41 +19,11 @@
   </head>
 
   <body>
-    <!--------------------------INIZIO HEADER ------------------------------->
+    <!-- Start Header -->
 
-    <header class="header" id="header">
-      <a href="/" class="logo">QuizCoder</a>
+    <div id="header"></div>
 
-      <label class="burger" for="burger">
-        <input type="checkbox" id="burger" />
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-
-      <nav class="nav" id="nav-menu">
-        <div class="dropdown">
-          <a href="#">Home</a>
-          <div class="dropdown-content">
-            <a href="#">sottosezione1</a>
-            <a href="#">sottosezione2</a>
-            <a href="#">sottosezione3</a>
-          </div>
-        </div>
-
-        <a href="#">Quiz</a>
-        <a href="#">Ultimi quiz</a>
-        <a href="#">Sezione 4</a>
-      </nav>
-
-      <div class="accesso">
-        <button class="login">Login</button>
-        <a href="#" class="sign-up">Sign Up</a>
-      </div>
-    </header>
-
-    <!--------------------------FINE HEADER ------------------------------->
-
+    <!-- End Header -->
     <!--------------------------INIZIO CENTER ------------------------------->
 
     <div class="main">
@@ -78,20 +48,17 @@
     </div>
     <!------------------------------- FINE CENTER ------------------------------->
 
-    <!------------------------------- INIZIO FOOTER ------------------------------->
-    <footer class="footer-sito">
-      <div class="footer-container">
-        <div class="footer-links">
-          <a href="#">Privacy</a>
-          <a href="#">Termini</a>
-          <a href="#">About us</a>
-        </div>
-        <p class="footer-copy">
-          &copy; 2025 QuizCoder. Tutti i diritti riservati.
-        </p>
-      </div>
-    </footer>
+    <!-- Start footer -->
+    <div id="footer"></div>
+    <!-- End footer -->
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("header").innerHTML = data));
 
-    <!------------------------------- FINE FOOTER ------------------------------->
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("footer").innerHTML = data));
+    </script>
   </body>
 </html>
