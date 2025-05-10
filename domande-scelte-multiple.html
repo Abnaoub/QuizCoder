@@ -14,16 +14,13 @@
       href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/domande-scelte-multiple.css">
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/domande-scelte-multiple.css" />
+    <script src="js/header.js" defer></script>
+    <script src="js/footer.js" defer></script>
   </head>
 
   <body>
-    <!-- Start Header -->
-
-    <div id="header"></div>
-
-    <!-- End Header -->
     <!--------------------------INIZIO CENTER ------------------------------->
 
     <div class="main">
@@ -47,18 +44,5 @@
       </div>
     </div>
     <!------------------------------- FINE CENTER ------------------------------->
-
-    <!-- Start footer -->
-    <div id="footer"></div>
-    <!-- End footer -->
-    <script>
-      fetch("header.html")
-        .then((response) => response.text())
-        .then((data) => (document.getElementById("header").innerHTML = data));
-
-      fetch("footer.html")
-        .then((response) => response.text())
-        .then((data) => (document.getElementById("footer").innerHTML = data));
-    </script>
   </body>
 </html>
