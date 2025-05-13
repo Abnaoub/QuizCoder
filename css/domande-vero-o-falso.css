@@ -1,5 +1,5 @@
 #web-languages {
-    margin: 32px auto;
+    margin: auto auto;
     width: 80%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
