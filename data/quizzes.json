@@ -3,35 +3,35 @@
     {
       "id": "1",
       "name": "Quiz 1",
-      "slug": "html-quiz-1",
+      "slug": "html_quiz_1",
       "language_slug": "html",
       "type": "scelta-multipla"
     },
     {
       "id": "2",
       "name": "Quiz 2",
-      "slug": "html-quiz-2",
+      "slug": "html_quiz_2",
       "language_slug": "html",
       "type": "vero-o-falso"
     },
     {
       "id": "3",
       "name": "Quiz 3",
-      "slug": "html-quiz-3",
+      "slug": "html_quiz_3",
       "language_slug": "html",
       "type": "scelta-multipla"
     },
     {
       "id": "4",
       "name": "Quiz 4",
-      "slug": "html-quiz-4",
+      "slug": "html_quiz_4",
       "language_slug": "html",
       "type": "vero-o-falso"
     },
     {
       "id": "5",
       "name": "Quiz 5",
-      "slug": "html-quiz-5",
+      "slug": "html_quiz_5",
       "language_slug": "html",
       "type": "vero-o-falso"
     },

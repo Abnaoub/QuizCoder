@@ -1,0 +1,16 @@
+{
+    "questions_types" : [
+        {
+            "id": 1,
+            "name": "Scelta Multipla",
+            "description": "Intro 1",
+            "slug": "scelta-multipla.html"
+        },
+        {
+            "id": 2,
+            "name": "Vero o falso",
+            "description": "Intro 2",
+            "slug": "vero-o-falso.html"
+        }
+    ]
+}

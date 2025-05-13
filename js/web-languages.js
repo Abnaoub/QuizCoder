@@ -3,7 +3,6 @@ var schoolSubjectsElement = document.getElementById("web-languages");
 fetch("./data/languages.json")
   .then((response) => response.json())
   .then((data) => {
-    console.log(data);
     for (let language of data.languages) {
       // Check Page Type
       let type;
@@ -14,49 +13,56 @@ fetch("./data/languages.json")
       }
       //Create Anchor Tag as a school subject container
       let a = document.createElement("a");
+      // <a></a>
       a.className = "language-item";
+      // <a class="language-itm"></a>
       a.href = `/quizzes-vero-o-falso.html?language=${language.slug}&type=${type}`;
+      // <a class="language-itm" href="/quizzes-vero-o-falso.html?language=${language.slug}&type=${type}"></a>
       a.style.backgroundColor = language.color;
+      // <a style="background-color: color" class="language-itm" href="/quizzes-vero-o-falso.html?language=${language.slug}&type=${type}"></a>
       // Add School Subject Title
       let titleElement = document.createElement("h2");
+      // <h2></h2>
       titleElement.textContent = language.name;
+      // <h2>HTML</h2>
       a.appendChild(titleElement);
-      // Add School Subject Image
-      // let image = document.createElement('img');
-      // image.src = `images/${schoolSubject.image}`;
-      // image.alt = schoolSubject.title;
-      // image.width = 300;
-      // image.height = 300;
-      // a.appendChild(image);
-      // Add School Subject Description
+      // <a style="background-color: color" class="language-itm" href="/quizzes-vero-o-falso.html?language=${language.slug}&type=${type}">
+      // <h2>HTML</h2>
+      // </a>
+
       let descriptionElement = document.createElement("p");
+      // <p></p>
       descriptionElement.textContent = language.description;
+      // <p>description</p>
       a.appendChild(descriptionElement);
+      // <a style="background-color: color" class="language-itm" href="/quizzes-vero-o-falso.html?language=${language.slug}&type=${type}">
+      // <h2>HTML</h2>
+      // <p>description</p>
+      // </a>
+
       schoolSubjectsElement.appendChild(a);
+      // <div id="web-languages">
+        // <a style="background-color: color" class="language-itm" href="/quizzes-vero-o-falso.html?language=${language.slug}&type=${type}">
+          // <h2>HTML</h2>
+          // <p>description</p>
+        // </a>
+                // <a style="background-color: color" class="language-itm" href="/quizzes-vero-o-falso.html?language=${language.slug}&type=${type}">
+          // <h2>HTML</h2>
+          // <p>description</p>
+        // </a>
+                // <a style="background-color: color" class="language-itm" href="/quizzes-vero-o-falso.html?language=${language.slug}&type=${type}">
+          // <h2>HTML</h2>
+          // <p>description</p>
+        // </a>
+                // <a style="background-color: color" class="language-itm" href="/quizzes-vero-o-falso.html?language=${language.slug}&type=${type}">
+          // <h2>HTML</h2>
+          // <p>description</p>
+        // </a>
+                // <a style="background-color: color" class="language-itm" href="/quizzes-vero-o-falso.html?language=${language.slug}&type=${type}">
+          // <h2>HTML</h2>
+          // <p>description</p>
+        // </a>
+      // </div>
     }
   })
   .catch((err) => console.error(err));
-
-// INTERAZIONI HTML-CSS
-const header = document.getElementById("header");
-const hamburger = document.getElementById("burger");
-const nav = document.getElementById("nav-menu");
-
-// Header scroll effect
-if (header) {
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 20) {
-      header.classList.add("scrolled");
-    } else {
-      header.classList.remove("scrolled");
-    }
-  });
-}
-
-// Hamburger menu toggle
-if (hamburger && nav) {
-  hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active"); // animazione burger
-    nav.classList.toggle("nav-active"); // mostra/nasconde il menu
-  });
-}
