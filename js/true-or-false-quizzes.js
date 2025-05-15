@@ -29,13 +29,13 @@ if (!language) {
   // Add Language Name to HTML.
   const lang = document.createElement("h1");
   lang.textContent = `${language.toUpperCase()} - ${
-    type === "vero-o-falso" ? "Vero o Falso" : "Scelta multipla"
+    type === "true-or-false" ? "Vero o Falso" : "Scelta multipla"
   }`;
 
   document.querySelector("main").insertAdjacentElement("afterbegin", lang);
 
   // Add Quizzes to HTML
-  fetch("../data/quizzes.json")
+  fetch("../data/quizzes-true-or-false.json")
     .then((response) => {
       console.log({ response });
       if (!response.ok) {
@@ -44,20 +44,20 @@ if (!language) {
       return response.json();
     })
     .then((data) => {
-      console.log(data);
-
+      console.log({ data });
       const filtredQuizzes = data.quizzes.filter(
         (quiz) => quiz.type === type && quiz.language_slug === language
       );
       console.log({ filtredQuizzes });
-      for(let quiz of filtredQuizzes){
-        const quizzesContainer = document.getElementById('quizzes-vero-o-falso');
-        const quizItem = document.createElement('a');
-        quizItem.className = 'card'
-        quizItem.href = `/domande.html?quiz_slug=${quiz.slug}`
-        quizItem.textContent = quiz.name
-        quizzesContainer.appendChild(quizItem)
-
+      for (let quiz of filtredQuizzes) {
+        const quizzesContainer = document.getElementById(
+          "true-or-false-quizzes"
+        );
+        const quizItem = document.createElement("a");
+        quizItem.className = "card";
+        quizItem.href = `/questions.html?quiz_slug=${quiz.slug}`;
+        quizItem.textContent = quiz.name;
+        quizzesContainer.appendChild(quizItem);
       }
     })
     .catch((err) => console.error(err));

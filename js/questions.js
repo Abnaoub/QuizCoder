@@ -10,7 +10,7 @@ console.log({ urlParams });
 const quizSlug = urlParams.get("quiz_slug");
 
 // 2. Carica il file JSON (assicurati di servirlo da questo path)
-fetch("../data/domande_vero_o_falso.json")
+fetch("../data/true-or-false-questions.json")
   .then((response) => response.json())
   .then((data) => initQuiz(data))
   .catch((err) => {
@@ -24,6 +24,7 @@ function initQuiz(data) {
   const filtered = allQuestions.filter(
     (quesion) => quesion.quiz_slug === quizSlug
   );
+  console.log({allQuestions, filtered})
   let currentIndex = 0;
   const selectedAnswers = {}; // { questionId: answerId }
 

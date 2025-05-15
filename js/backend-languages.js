@@ -1,8 +1,10 @@
 var webLanguages = document.getElementById("web-languages");
 
-fetch("./data/front-end-languages.json")
+
+fetch("./data/back-end-languages.json")
   .then((response) => response.json())
   .then((data) => {
+    console.log({data})
     for (let language of data.languages) {
       let type;
       if (location.pathname === "/true-or-false-questions.html") {

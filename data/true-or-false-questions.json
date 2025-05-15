@@ -1,0 +1,907 @@
+{
+  "questions": [
+    {
+      "id": "html-1-1",
+      "quiz_slug": "html_quiz_1",
+      "type": "vero-o-falso",
+      "title": "HTML è un linguaggio di programmazione.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+    {
+      "id": "html-1-2",
+      "quiz_slug": "html_quiz_1",
+      "title": "Il tag <!DOCTYPE html> è obbligatorio in HTML5.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "html-1-3",
+      "quiz_slug": "html_quiz_1",
+      "title": "L'attributo 'alt' in <img> è obbligatorio per l'accessibilità.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "html-1-4",
+      "quiz_slug": "html_quiz_1",
+      "title": "<div> è un elemento inline.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+    {
+      "id": "html-1-5",
+      "quiz_slug": "html_quiz_1",
+      "title": "HTML5 introduce elementi semantici come <header> e <footer>.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "html-2-1",
+      "quiz_slug": "html_quiz_2",
+      "title": "L'attributo 'href' può essere usato solo con il tag <a>.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+    {
+      "id": "html-2-2",
+      "quiz_slug": "html_quiz_2",
+      "title": "<br> è un tag auto-chiudente.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "html-2-3",
+      "quiz_slug": "html_quiz_2",
+      "title": "HTML supporta nativamente la validazione degli input.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "html-2-4",
+      "quiz_slug": "html_quiz_2",
+      "title": "<meta> tags devono sempre stare in <head>.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "html-2-5",
+      "quiz_slug": "html_quiz_2",
+      "title": "L'attributo 'required' funziona solo con JavaScript.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+    {
+      "id": "html-3-1",
+      "quiz_slug": "html_quiz_3",
+      "title": "<svg> è un elemento HTML5 per grafica vettoriale.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "html-3-2",
+      "quiz_slug": "html_quiz_3",
+      "title": "L'attributo 'async' in <script> blocca il rendering della pagina.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+    {
+      "id": "html-3-3",
+      "quiz_slug": "html_quiz_3",
+      "title": "<canvas> richiede JavaScript per disegnare.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "html-3-4",
+      "quiz_slug": "html_quiz_3",
+      "title": "HTML può riprodurre video senza JavaScript.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "html-3-5",
+      "quiz_slug": "html_quiz_3",
+      "title": "L'elemento <table> è deprecato in HTML5.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+
+    {
+      "id": "html-4-1",
+      "quiz_slug": "html_quiz_4",
+      "title": "L'attributo 'download' in <a> forza il download del file.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "html-4-2",
+      "quiz_slug": "html_quiz_4",
+      "title": "<input type='color'> è supportato in tutti i browser.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "html-4-3",
+      "quiz_slug": "html_quiz_4",
+      "title": "L'elemento <main> può essere usato più volte in una pagina.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+    {
+      "id": "html-4-4",
+      "quiz_slug": "html_quiz_4",
+      "title": "HTML5 supporta nativamente la geolocalizzazione.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "html-4-5",
+      "quiz_slug": "html_quiz_4",
+      "title": "<datalist> non richiede JavaScript per funzionare.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+
+    {
+      "id": "html-5-1",
+      "quiz_slug": "html_quiz_5",
+      "title": "L'attributo 'role' è utile per l'accessibilità.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "html-5-2",
+      "quiz_slug": "html_quiz_5",
+      "title": "<picture> è un'alternativa a <img> per immagini responsive.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "html-5-3",
+      "quiz_slug": "html_quiz_5",
+      "title": "Web Components sono nativi in HTML5.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "html-5-4",
+      "quiz_slug": "html_quiz_5",
+      "title": "<template> viene renderizzato automaticamente.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+    {
+      "id": "html-5-5",
+      "quiz_slug": "html_quiz_5",
+      "title": "L'attributo 'loading=lazy' funziona solo con JavaScript.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+    {
+      "id": "css-1-1",
+      "quiz_slug": "css_quiz_1",
+      "title": "'margin: 0 auto;' centra un elemento orizzontalmente.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "css-1-2",
+      "quiz_slug": "css_quiz_1",
+      "title": "Flexbox è parte di CSS2.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+    {
+      "id": "css-1-3",
+      "quiz_slug": "css_quiz_1",
+      "title": "I media queries servono per layout responsive.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "css-1-4",
+      "quiz_slug": "css_quiz_1",
+      "title": "CSS può modificare il contenuto HTML.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+    {
+      "id": "css-1-5",
+      "quiz_slug": "css_quiz_1",
+      "title": "'z-index' funziona senza position.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+    {
+      "id": "css-2-1",
+      "quiz_slug": "css_quiz_2",
+      "title": "CSS Grid è supportato da tutti i browser moderni.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "css-2-2",
+      "quiz_slug": "css_quiz_2",
+      "title": "Le variabili CSS possono essere modificate con JS.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "css-2-3",
+      "quiz_slug": "css_quiz_2",
+      "title": ":hover funziona su dispositivi touch.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+    {
+      "id": "css-2-4",
+      "quiz_slug": "css_quiz_2",
+      "title": "'!important' può essere sovrascritto.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+    {
+      "id": "css-2-5",
+      "quiz_slug": "css_quiz_2",
+      "title": "CSS può animare elementi senza JavaScript.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "css-3-1",
+      "quiz_slug": "css_quiz_3",
+      "title": "'em' è relativo alla dimensione del font dell'elemento.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "css-3-2",
+      "quiz_slug": "css_quiz_3",
+      "title": "'rem' è relativo all'elemento root.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "css-3-3",
+      "quiz_slug": "css_quiz_3",
+      "title": "I pseudo-elementi usano un solo due punti (es: :before).",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+    {
+      "id": "css-3-4",
+      "quiz_slug": "css_quiz_3",
+      "title": "'transition' richiede JavaScript per funzionare.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+    {
+      "id": "css-3-5",
+      "quiz_slug": "css_quiz_3",
+      "title": "'transform' non influenza il layout degli elementi circostanti.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "css-4-1",
+      "quiz_slug": "css_quiz_4",
+      "title": "'position: sticky' è supportato in tutti i browser.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "css-4-2",
+      "quiz_slug": "css_quiz_4",
+      "title": "'display: contents' nasconde l'elemento.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+    {
+      "id": "css-4-3",
+      "quiz_slug": "css_quiz_4",
+      "title": "'gap' funziona solo con Grid, non con Flexbox.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+    {
+      "id": "css-4-4",
+      "quiz_slug": "css_quiz_4",
+      "title": "'aspect-ratio' è una proprietà CSS3.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "css-4-5",
+      "quiz_slug": "css_quiz_4",
+      "title": "'@supports' verifica la compatibilità del browser.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "css-5-1",
+      "quiz_slug": "css_quiz_5",
+      "title": "'will-change' migliora le performance delle animazioni.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "css-5-2",
+      "quiz_slug": "css_quiz_5",
+      "title": "'backface-visibility' riguarda gli elementi 3D.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "css-5-3",
+      "quiz_slug": "css_quiz_5",
+      "title": "'mix-blend-mode' richiede un elemento padre con position: relative.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+    {
+      "id": "css-5-4",
+      "quiz_slug": "css_quiz_5",
+      "title": "'scroll-snap' aiuta a creare scorrimento a scatti.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "css-5-5",
+      "quiz_slug": "css_quiz_5",
+      "title": "'@media (prefers-color-scheme: dark)' rileva la modalità scura.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "js-1-1",
+      "quiz_slug": "js_quiz_1",
+      "title": "JavaScript è lo stesso di Java.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+    {
+      "id": "js-1-2",
+      "quiz_slug": "js_quiz_1",
+      "title": "JavaScript è single-threaded.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "js-1-3",
+      "quiz_slug": "js_quiz_1",
+      "title": "Le arrow functions hanno il loro 'this'.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+    {
+      "id": "js-1-4",
+      "quiz_slug": "js_quiz_1",
+      "title": "'let' ha scope di blocco.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "js-1-5",
+      "quiz_slug": "js_quiz_1",
+      "title": "'undefined == null' restituisce true.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "js-2-1",
+      "quiz_slug": "js_quiz_2",
+      "title": "Le Promises servono per gestire operazioni asincrone.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "js-2-2",
+      "quiz_slug": "js_quiz_2",
+      "title": "'NaN === NaN' restituisce true.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+    {
+      "id": "js-2-3",
+      "quiz_slug": "js_quiz_2",
+      "title": "JavaScript può manipolare il DOM.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "js-2-4",
+      "quiz_slug": "js_quiz_2",
+      "title": "'const' impedisce la modifica di oggetti/array.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+    {
+      "id": "js-2-5",
+      "quiz_slug": "js_quiz_2",
+      "title": "JavaScript è un linguaggio interpretato.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "js-3-1",
+      "quiz_slug": "js_quiz_3",
+      "title": "'use strict' abilita la modalità strict in tutto il file.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "js-3-2",
+      "quiz_slug": "js_quiz_3",
+      "title": "I template literal usano backtick (`).",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "js-3-3",
+      "quiz_slug": "js_quiz_3",
+      "title": "'this' nelle arrow functions si riferisce al contesto globale.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "js-3-4",
+      "quiz_slug": "js_quiz_3",
+      "title": "'fetch()' ritorna una Promise.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "js-3-5",
+      "quiz_slug": "js_quiz_3",
+      "title": "'async/await' è solo zucchero sintattico per le Promise.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "js-4-1",
+      "quiz_slug": "js_quiz_4",
+      "title": "'Object.keys()' ritorna un array di valori.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+    {
+      "id": "js-4-2",
+      "quiz_slug": "js_quiz_4",
+      "title": "'localStorage' salva dati permanentemente.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "js-4-3",
+      "quiz_slug": "js_quiz_4",
+      "title": "'event.preventDefault()' ferma la propagazione dell'evento.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+    {
+      "id": "js-4-4",
+      "quiz_slug": "js_quiz_4",
+      "title": "'JSON.parse()' può lanciare un'eccezione.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "js-4-5",
+      "quiz_slug": "js_quiz_4",
+      "title": "'Set' può contenere valori duplicati.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+    {
+      "id": "js-5-1",
+      "quiz_slug": "js_quiz_5",
+      "title": "'WeakMap' permette il garbage collection delle chiavi.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "js-5-2",
+      "quiz_slug": "js_quiz_5",
+      "title": "'Proxy' può intercettare operazioni sugli oggetti.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "js-5-3",
+      "quiz_slug": "js_quiz_5",
+      "title": "'Symbol' crea valori univoci.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "js-5-4",
+      "quiz_slug": "js_quiz_5",
+      "title": "'Generator functions' usano la sintassi function*.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "js-5-5",
+      "quiz_slug": "js_quiz_5",
+      "title": "'BigInt' può essere usato con Number nello stesso operazione.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+    {
+      "id": "vue-1-1",
+      "quiz_slug": "vue_quiz_1",
+      "title": "Vue.js è un framework progressivo per la creazione di interfacce utente.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "vue-1-2",
+      "quiz_slug": "vue_quiz_1",
+      "title": "Il file principale di un progetto Vue è solitamente 'index.html'.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+    {
+      "id": "vue-1-3",
+      "quiz_slug": "vue_quiz_1",
+      "title": "La direttiva 'v-if' è usata per rendere condizionalmente un elemento.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "vue-1-4",
+      "quiz_slug": "vue_quiz_1",
+      "title": "In Vue, 'v-model' consente il two-way data binding.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "vue-1-5",
+      "quiz_slug": "vue_quiz_1",
+      "title": "I componenti Vue non possono essere riutilizzati.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+    {
+      "id": "vue-2-1",
+      "quiz_slug": "vue_quiz_2",
+      "title": "Le proprietà di un componente Vue sono definite all'interno del metodo 'data()'.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "vue-2-2",
+      "quiz_slug": "vue_quiz_2",
+      "title": "Il ciclo di vita di un componente Vue include un hook chiamato 'mounted'.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "vue-2-3",
+      "quiz_slug": "vue_quiz_2",
+      "title": "Le computed properties in Vue sono usate per eseguire operazioni asincrone.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+    {
+      "id": "vue-2-4",
+      "quiz_slug": "vue_quiz_2",
+      "title": "Il binding dinamico delle classi in Vue può essere fatto con ':class'.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "vue-2-5",
+      "quiz_slug": "vue_quiz_2",
+      "title": "Le props vengono usate per passare dati da un componente figlio a uno genitore.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+    {
+      "id": "vue-3-1",
+      "quiz_slug": "vue_quiz_3",
+      "title": "La direttiva 'v-for' in Vue serve per iterare su array o oggetti.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "vue-3-2",
+      "quiz_slug": "vue_quiz_3",
+      "title": "Il metodo 'watch' in Vue permette di reagire a cambiamenti nei dati.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "vue-3-3",
+      "quiz_slug": "vue_quiz_3",
+      "title": "Vue usa JSX come linguaggio di template di default.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+    {
+      "id": "vue-3-4",
+      "quiz_slug": "vue_quiz_3",
+      "title": "In Vue, '$emit' serve per inviare eventi da un componente figlio al genitore.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "vue-3-5",
+      "quiz_slug": "vue_quiz_3",
+      "title": "La sintassi ':key' è usata per aiutare Vue a identificare elementi univoci nei loop.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "vue-4-1",
+      "quiz_slug": "vue_quiz_4",
+      "title": "Vue Router serve per la gestione delle rotte in un'app Vue.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "vue-4-2",
+      "quiz_slug": "vue_quiz_4",
+      "title": "Il tag <template> in un file .vue è opzionale.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    },
+    {
+      "id": "vue-4-3",
+      "quiz_slug": "vue_quiz_4",
+      "title": "In Vue, la direttiva 'v-bind' può essere abbreviata con ':'",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "vue-4-4",
+      "quiz_slug": "vue_quiz_4",
+      "title": "Il modulo Vuex è utilizzato per la gestione dello stato centralizzato.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "vue-4-5",
+      "quiz_slug": "vue_quiz_4",
+      "title": "Vue 3 utilizza Composition API come approccio alternativo alla Options API.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "vue-5-1",
+      "quiz_slug": "vue_quiz_5",
+      "title": "La Composition API utilizza le funzioni 'setup()', 'ref()' e 'reactive()'.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "vue-5-2",
+      "quiz_slug": "vue_quiz_5",
+      "title": "Vue consente la creazione di componenti globali e locali.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "vue-5-3",
+      "quiz_slug": "vue_quiz_5",
+      "title": "'ref()' in Vue crea una variabile reattiva che può essere usata nel template.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "vue-5-4",
+      "quiz_slug": "vue_quiz_5",
+      "title": "In Vue, 'provide' e 'inject' permettono di passare dati tra componenti non direttamente correlati.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": true },
+        { "id": "answer-2", "title": false, "isCorrect": false }
+      ]
+    },
+    {
+      "id": "vue-5-5",
+      "quiz_slug": "vue_quiz_5",
+      "title": "Il comando 'vue create my-app' richiede Webpack come unico bundler.",
+      "answers": [
+        { "id": "answer-1", "title": true, "isCorrect": false },
+        { "id": "answer-2", "title": false, "isCorrect": true }
+      ]
+    }
+  ]
+}

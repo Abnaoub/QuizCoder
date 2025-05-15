@@ -11,11 +11,7 @@ const header = `
       <nav class="nav" id="nav-menu">
         <div class="dropdown">
           <a href="/">Home</a>
-          <div class="dropdown-content">
-            <a href="#">sottosezione1</a>
-            <a href="#">sottosezione2</a>
-            <a href="#">sottosezione3</a>
-          </div>
+          
         </div>
 
         <a href="#">Quiz</a>

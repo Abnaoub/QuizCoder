@@ -23,5 +23,5 @@
 .language-item:hover{
     border: 3px solid white;
     color: black;
-    scale: 1.02;
+    transform: scale(1.02);
 }

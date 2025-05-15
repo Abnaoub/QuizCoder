@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QuizCoder | Quiz di coding</title>
+    <title>QuizCoder | Quiz Page</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
       rel="stylesheet"
@@ -15,18 +15,25 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/homepage.css" />
+    <link rel="stylesheet" href="css/questions.css" />
     <script src="js/header.js" defer></script>
     <script src="js/footer.js" defer></script>
-    <script src="js/homepage.js" defer></script>
+    <script src="js/questions.js" defer></script>
   </head>
 
   <body>
-    <!-- Start Main -->
     <main>
-      <h1 class="select-questions-type">Seleziona il tipo delle domande</h1>
-      <div id="questions_type" class="questions_type"></div>
+      <div class="quiz-container">
+        <h1 id="question-title">Caricamento...</h1>
+
+        <div class="answers-list" id="answers-list">
+        </div>
+
+        <div class="navigation-buttons">
+          <button id="prev-btn">Indietro</button>
+          <button id="next-btn">Avanti</button>
+        </div>
+      </div>
     </main>
-    <!-- End Main -->
   </body>
 </html>

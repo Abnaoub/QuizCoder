@@ -1,0 +1,144 @@
+{
+  "quizzes": [
+    {
+      "id": "1",
+      "name": "Quiz 1",
+      "slug": "html_quiz_1",
+      "language_slug": "html",
+      "type": "true-or-false"
+    },
+    {
+      "id": "2",
+      "name": "Quiz 2",
+      "slug": "html_quiz_2",
+      "language_slug": "html",
+      "type": "true-or-false"
+    },
+    {
+      "id": "3",
+      "name": "Quiz 3",
+      "slug": "html_quiz_3",
+      "language_slug": "html",
+      "type": "true-or-false"
+    },
+    {
+      "id": "4",
+      "name": "Quiz 4",
+      "slug": "html_quiz_4",
+      "language_slug": "html",
+      "type": "true-or-false"
+    },
+    {
+      "id": "5",
+      "name": "Quiz 5",
+      "slug": "html_quiz_5",
+      "language_slug": "html",
+      "type": "true-or-false"
+    },
+    {
+      "id": "6",
+      "name": "Quiz 1",
+      "slug": "css_quiz_1",
+      "language_slug": "css",
+      "type": "true-or-false"
+    },
+    {
+      "id": "7",
+      "name": "Quiz 2",
+      "slug": "css_quiz_2",
+      "language_slug": "css",
+      "type": "true-or-false"
+    },
+    {
+      "id": "8",
+      "name": "Quiz 3",
+      "slug": "css_quiz_3",
+      "language_slug": "css",
+      "type": "true-or-false"
+    },
+    {
+      "id": "9",
+      "name": "Quiz 4",
+      "slug": "css_quiz_4",
+      "language_slug": "css",
+      "type": "true-or-false"
+    },
+    {
+      "id": "10",
+      "name": "Quiz 5",
+      "slug": "css_quiz_5",
+      "language_slug": "css",
+      "type": "true-or-false"
+    },
+    {
+      "id": "11",
+      "name": "Quiz 1",
+      "slug": "js_quiz_1",
+      "language_slug": "javascript",
+      "type": "true-or-false"
+    },
+    {
+      "id": "12",
+      "name": "Quiz 2",
+      "slug": "js_quiz_2",
+      "language_slug": "javascript",
+      "type": "true-or-false"
+    },
+    {
+      "id": "13",
+      "name": "Quiz 3",
+      "slug": "js_quiz_3",
+      "language_slug": "javascript",
+      "type": "true-or-false"
+    },
+    {
+      "id": "14",
+      "name": "Quiz 4",
+      "slug": "js_quiz_4",
+      "language_slug": "javascript",
+      "type": "true-or-false"
+    },
+    {
+      "id": "15",
+      "name": "Quiz 5",
+      "slug": "js_quiz_5",
+      "language_slug": "javascript",
+      "type": "true-or-false"
+    },
+    {
+      "id": "16",
+      "name": "Quiz 1",
+      "slug": "vue_quiz_1",
+      "language_slug": "vue",
+      "type": "true-or-false"
+    },
+    {
+      "id": "17",
+      "name": "Quiz 2",
+      "slug": "vue_quiz_2",
+      "language_slug": "vue",
+      "type": "true-or-false"
+    },
+    {
+      "id": "18",
+      "name": "Quiz 3",
+      "slug": "vue_quiz_3",
+      "language_slug": "vue",
+      "type": "true-or-false"
+    },
+    {
+      "id": "19",
+      "name": "Quiz 4",
+      "slug": "vue_quiz_4",
+      "language_slug": "vue",
+      "type": "true-or-false"
+    },
+    {
+      "id": "20",
+      "name": "Quiz 5",
+      "slug": "vue_quiz_5",
+      "language_slug": "vue",
+      "type": "true-or-false"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "languages": [
+    {
+      "id": "5",
+      "name": "Node.js",
+      "slug": "nodejs",
+      "description": "Esercitati su Node.js",
+      "color": "#83CD29"
+    },
+    {
+      "id": "6",
+      "name": "Python",
+      "slug": "python",
+      "description": "Esercitati su Python",
+      "color": "#3572A5"
+    },
+    {
+      "id": "7",
+      "name": "PHP",
+      "slug": "php",
+      "description": "Esercitati su PHP",
+      "color": "#8892BF"
+    },
+    {
+      "id": "8",
+      "name": "SQL",
+      "slug": "sql",
+      "description": "Esercitati su SQL",
+      "color": "#e38c00"
+    }
+  ]
+}
