@@ -5,7 +5,7 @@ fetch("./data/front-end-languages.json")
   .then((data) => {
     for (let language of data.languages) {
       let type;
-      if (location.pathname === "/true-or-false-questions.html") {
+      if (location.pathname === "/true-or-false.html") {
         type = "true-or-false";
       } else {
         type = "multiple-choice";

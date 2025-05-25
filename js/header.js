@@ -11,19 +11,12 @@ const header = `
       <nav class="nav" id="nav-menu">
         <div class="dropdown">
           <a href="/">Home</a>
-          
         </div>
-
-        <a href="#">Quiz</a>
-        <a href="#">Ultimi quiz</a>
-        <a href="#">Sezione 4</a>
+        <a href="/true-or-false.html">Vero o false</a>
+        <a href="/multiple-choice.html">Scelta multipla</a>
+        <a href="/last-quiz.html">Ultimi quiz</a>
       </nav>
-
-      <div class="accesso">
-        <button class="login">Login</button>
-        <a href="#" class="sign-up">Sign Up</a>
-      </div>
     </header>
 `;
 
-document.body.insertAdjacentHTML('afterbegin', header)
+document.body.insertAdjacentHTML("afterbegin", header);

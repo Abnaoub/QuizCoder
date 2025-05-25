@@ -1,126 +1,2804 @@
 {
-    "questions": [
-      {
-        "id": "questions-1",
-        "title": "Quale tag HTML viene usato per creare un paragrafo?",
-        "quiz_slug": "html-quiz-1",
-        "answers": [
-          { "id": "answer-1", "title": "<p>", "isCorrect": true },
-          { "id": "answer-2", "title": "<paragraph>", "isCorrect": false },
-          { "id": "answer-3", "title": "<para>", "isCorrect": false },
-          { "id": "answer-4", "title": "<text>", "isCorrect": false }
-        ]
-      },
-      {
-        "id": "questions-2",
-        "title": "Quale attributo del tag <a> definisce l'indirizzo del link?",
-        "quiz_slug": "html-quiz-1",
-        "answers": [
-          { "id": "answer-1", "title": "src", "isCorrect": false },
-          { "id": "answer-2", "title": "href", "isCorrect": true },
-          { "id": "answer-3", "title": "link", "isCorrect": false },
-          { "id": "answer-4", "title": "url", "isCorrect": false }
-        ]
-      },
-      {
-        "id": "questions-3",
-        "title": "Quale tag HTML si usa per un'immagine?",
-        "quiz_slug": "html-quiz-1",
-        "answers": [
-          { "id": "answer-1", "title": "<img>", "isCorrect": true },
-          { "id": "answer-2", "title": "<image>", "isCorrect": false },
-          { "id": "answer-3", "title": "<pic>", "isCorrect": false },
-          { "id": "answer-4", "title": "<src>", "isCorrect": false }
-        ]
-      },
-      {
-        "id": "questions-4",
-        "title": "Con quale tag si crea un collegamento ipertestuale?",
-        "quiz_slug": "html-quiz-1",
-        "answers": [
-          { "id": "answer-1", "title": "<link>", "isCorrect": false },
-          { "id": "answer-2", "title": "<a>", "isCorrect": true },
-          { "id": "answer-3", "title": "<href>", "isCorrect": false },
-          { "id": "answer-4", "title": "<ul>", "isCorrect": false }
-        ]
-      },
-      {
-        "id": "questions-5",
-        "title": "Come si crea una lista non ordinata?",
-        "quiz_slug": "html-quiz-1",
-        "answers": [
-          { "id": "answer-1", "title": "<ul>", "isCorrect": true },
-          { "id": "answer-2", "title": "<ol>", "isCorrect": false },
-          { "id": "answer-3", "title": "<li>", "isCorrect": false },
-          { "id": "answer-4", "title": "<list>", "isCorrect": false }
-        ]
-      },
-      {
-        "id": "questions-6",
-        "title": "Con quale tag si definisce un'intestazione di primo livello?",
-        "quiz_slug": "html-quiz-1",
-        "answers": [
-          { "id": "answer-1", "title": "<h1>", "isCorrect": true },
-          { "id": "answer-2", "title": "<head1>", "isCorrect": false },
-          { "id": "answer-3", "title": "<header>", "isCorrect": false },
-          { "id": "answer-4", "title": "<title>", "isCorrect": false }
-        ]
-      },
-      {
-        "id": "questions-7",
-        "title": "Qual è il tag corretto per una tabella?",
-        "quiz_slug": "html-quiz-1",
-        "answers": [
-          { "id": "answer-1", "title": "<table>", "isCorrect": true },
-          { "id": "answer-2", "title": "<tab>", "isCorrect": false },
-          { "id": "answer-3", "title": "<tbody>", "isCorrect": false },
-          { "id": "answer-4", "title": "<tbl>", "isCorrect": false }
-        ]
-      },
-      {
-        "id": "questions-8",
-        "title": "Come si aggiunge un commento in HTML?",
-        "quiz_slug": "html-quiz-1",
-        "answers": [
-          { "id": "answer-1", "title": "<!-- Commento -->", "isCorrect": true },
-          { "id": "answer-2", "title": "// Commento", "isCorrect": false },
-          { "id": "answer-3", "title": "/* Commento */", "isCorrect": false },
-          { "id": "answer-4", "title": "# Commento", "isCorrect": false }
-        ]
-      },
-      {
-        "id": "questions-9",
-        "title": "Qual è il tag corretto per definire un modulo (form)?",
-        "quiz_slug": "html-quiz-1",
-        "answers": [
-          { "id": "answer-1", "title": "<form>", "isCorrect": true },
-          { "id": "answer-2", "title": "<module>", "isCorrect": false },
-          { "id": "answer-3", "title": "<input>", "isCorrect": false },
-          { "id": "answer-4", "title": "<submit>", "isCorrect": false }
-        ]
-      },
-      {
-        "id": "questions-10",
-        "title": "Quale attributo si usa per specificare un testo alternativo per un'immagine?",
-        "quiz_slug": "html-quiz-1",
-        "answers": [
-          { "id": "answer-1", "title": "alt", "isCorrect": true },
-          { "id": "answer-2", "title": "src", "isCorrect": false },
-          { "id": "answer-3", "title": "title", "isCorrect": false },
-          { "id": "answer-4", "title": "description", "isCorrect": false }
-        ]
-      },
-      {
-        "id": "questions-11",
-        "title": "Quale attributo si usa per specificare un testo alternativo per un'immagine?",
-        "quiz_slug": "html-quiz-2",
-        "answers": [
-          { "id": "answer-1", "title": "alt", "isCorrect": true },
-          { "id": "answer-2", "title": "src", "isCorrect": false },
-          { "id": "answer-3", "title": "title", "isCorrect": false },
-          { "id": "answer-4", "title": "description", "isCorrect": false }
-        ]
-      }
-    ]
-  }
-  
+  "questions": [
+    {
+      "id": "nodejs-1-1",
+      "quiz_slug": "nodejs_quiz_1",
+      "type": "multiple-choice",
+      "title": "Quale comando avvia un'app Node.js?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "npm start",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "node start",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "node run",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "start app.js",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "nodejs-1-2",
+      "quiz_slug": "nodejs_quiz_1",
+      "type": "multiple-choice",
+      "title": "Quale modulo crea un server HTTP?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "fs",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "http",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "os",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "events",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "nodejs-1-3",
+      "quiz_slug": "nodejs_quiz_1",
+      "type": "multiple-choice",
+      "title": "Come si importa un modulo in Node.js?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "include",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "require",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "import",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "load",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "nodejs-1-4",
+      "quiz_slug": "nodejs_quiz_1",
+      "type": "multiple-choice",
+      "title": "Cosa fa 'fs.readFile'?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "Scrive un file",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "Legge un file",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "Cancella un file",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "Crea un file",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "nodejs-1-5",
+      "quiz_slug": "nodejs_quiz_1",
+      "type": "multiple-choice",
+      "title": "Come si gestiscono pacchetti in Node.js?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "git",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "pip",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "npm",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-4",
+          "title": "composer",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "nodejs-2-1",
+      "quiz_slug": "nodejs_quiz_2",
+      "type": "multiple-choice",
+      "title": "Quale comando avvia un'app Node.js?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "npm start",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "node start",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "node run",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "start app.js",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "nodejs-2-2",
+      "quiz_slug": "nodejs_quiz_2",
+      "type": "multiple-choice",
+      "title": "Quale modulo crea un server HTTP?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "fs",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "http",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "os",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "events",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "nodejs-2-3",
+      "quiz_slug": "nodejs_quiz_2",
+      "type": "multiple-choice",
+      "title": "Come si importa un modulo in Node.js?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "include",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "require",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "import",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "load",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "nodejs-2-4",
+      "quiz_slug": "nodejs_quiz_2",
+      "type": "multiple-choice",
+      "title": "Cosa fa 'fs.readFile'?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "Scrive un file",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "Legge un file",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "Cancella un file",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "Crea un file",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "nodejs-2-5",
+      "quiz_slug": "nodejs_quiz_2",
+      "type": "multiple-choice",
+      "title": "Come si gestiscono pacchetti in Node.js?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "git",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "pip",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "npm",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-4",
+          "title": "composer",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "nodejs-3-1",
+      "quiz_slug": "nodejs_quiz_3",
+      "type": "multiple-choice",
+      "title": "Quale comando avvia un'app Node.js?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "npm start",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "node start",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "node run",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "start app.js",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "nodejs-3-2",
+      "quiz_slug": "nodejs_quiz_3",
+      "type": "multiple-choice",
+      "title": "Quale modulo crea un server HTTP?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "fs",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "http",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "os",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "events",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "nodejs-3-3",
+      "quiz_slug": "nodejs_quiz_3",
+      "type": "multiple-choice",
+      "title": "Come si importa un modulo in Node.js?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "include",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "require",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "import",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "load",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "nodejs-3-4",
+      "quiz_slug": "nodejs_quiz_3",
+      "type": "multiple-choice",
+      "title": "Cosa fa 'fs.readFile'?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "Scrive un file",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "Legge un file",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "Cancella un file",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "Crea un file",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "nodejs-3-5",
+      "quiz_slug": "nodejs_quiz_3",
+      "type": "multiple-choice",
+      "title": "Come si gestiscono pacchetti in Node.js?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "git",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "pip",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "npm",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-4",
+          "title": "composer",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "nodejs-4-1",
+      "quiz_slug": "nodejs_quiz_4",
+      "type": "multiple-choice",
+      "title": "Quale comando avvia un'app Node.js?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "npm start",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "node start",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "node run",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "start app.js",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "nodejs-4-2",
+      "quiz_slug": "nodejs_quiz_4",
+      "type": "multiple-choice",
+      "title": "Quale modulo crea un server HTTP?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "fs",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "http",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "os",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "events",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "nodejs-4-3",
+      "quiz_slug": "nodejs_quiz_4",
+      "type": "multiple-choice",
+      "title": "Come si importa un modulo in Node.js?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "include",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "require",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "import",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "load",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "nodejs-4-4",
+      "quiz_slug": "nodejs_quiz_4",
+      "type": "multiple-choice",
+      "title": "Cosa fa 'fs.readFile'?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "Scrive un file",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "Legge un file",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "Cancella un file",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "Crea un file",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "nodejs-4-5",
+      "quiz_slug": "nodejs_quiz_4",
+      "type": "multiple-choice",
+      "title": "Come si gestiscono pacchetti in Node.js?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "git",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "pip",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "npm",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-4",
+          "title": "composer",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "nodejs-5-1",
+      "quiz_slug": "nodejs_quiz_5",
+      "type": "multiple-choice",
+      "title": "Quale comando avvia un'app Node.js?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "npm start",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "node start",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "node run",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "start app.js",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "nodejs-5-2",
+      "quiz_slug": "nodejs_quiz_5",
+      "type": "multiple-choice",
+      "title": "Quale modulo crea un server HTTP?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "fs",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "http",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "os",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "events",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "nodejs-5-3",
+      "quiz_slug": "nodejs_quiz_5",
+      "type": "multiple-choice",
+      "title": "Come si importa un modulo in Node.js?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "include",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "require",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "import",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "load",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "nodejs-5-4",
+      "quiz_slug": "nodejs_quiz_5",
+      "type": "multiple-choice",
+      "title": "Cosa fa 'fs.readFile'?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "Scrive un file",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "Legge un file",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "Cancella un file",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "Crea un file",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "nodejs-5-5",
+      "quiz_slug": "nodejs_quiz_5",
+      "type": "multiple-choice",
+      "title": "Come si gestiscono pacchetti in Node.js?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "git",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "pip",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "npm",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-4",
+          "title": "composer",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "python-1-1",
+      "quiz_slug": "python_quiz_1",
+      "type": "multiple-choice",
+      "title": "Cosa stampa print(2 ** 3)?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "6",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "8",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "9",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "7",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "python-1-2",
+      "quiz_slug": "python_quiz_1",
+      "type": "multiple-choice",
+      "title": "Qual è la parola chiave per una funzione?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "def",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "func",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "function",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "lambda",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "python-1-3",
+      "quiz_slug": "python_quiz_1",
+      "type": "multiple-choice",
+      "title": "Come si dichiara una lista?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "list()",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "[]",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "{}",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "python-1-4",
+      "quiz_slug": "python_quiz_1",
+      "type": "multiple-choice",
+      "title": "Quale funzione converte una stringa in int?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "parseInt",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "toInt",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "int",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-4",
+          "title": "number",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "python-1-5",
+      "quiz_slug": "python_quiz_1",
+      "type": "multiple-choice",
+      "title": "Cosa fa 'len()'?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "Conta gli elementi",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "Ordina",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "Concatena",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "Elimina",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "python-2-1",
+      "quiz_slug": "python_quiz_2",
+      "type": "multiple-choice",
+      "title": "Cosa stampa print(2 ** 3)?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "6",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "8",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "9",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "7",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "python-2-2",
+      "quiz_slug": "python_quiz_2",
+      "type": "multiple-choice",
+      "title": "Qual è la parola chiave per una funzione?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "def",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "func",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "function",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "lambda",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "python-2-3",
+      "quiz_slug": "python_quiz_2",
+      "type": "multiple-choice",
+      "title": "Come si dichiara una lista?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "list()",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "[]",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "{}",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "python-2-4",
+      "quiz_slug": "python_quiz_2",
+      "type": "multiple-choice",
+      "title": "Quale funzione converte una stringa in int?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "parseInt",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "toInt",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "int",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-4",
+          "title": "number",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "python-2-5",
+      "quiz_slug": "python_quiz_2",
+      "type": "multiple-choice",
+      "title": "Cosa fa 'len()'?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "Conta gli elementi",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "Ordina",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "Concatena",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "Elimina",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "python-3-1",
+      "quiz_slug": "python_quiz_3",
+      "type": "multiple-choice",
+      "title": "Cosa stampa print(2 ** 3)?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "6",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "8",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "9",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "7",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "python-3-2",
+      "quiz_slug": "python_quiz_3",
+      "type": "multiple-choice",
+      "title": "Qual è la parola chiave per una funzione?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "def",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "func",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "function",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "lambda",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "python-3-3",
+      "quiz_slug": "python_quiz_3",
+      "type": "multiple-choice",
+      "title": "Come si dichiara una lista?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "list()",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "[]",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "{}",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "python-3-4",
+      "quiz_slug": "python_quiz_3",
+      "type": "multiple-choice",
+      "title": "Quale funzione converte una stringa in int?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "parseInt",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "toInt",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "int",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-4",
+          "title": "number",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "python-3-5",
+      "quiz_slug": "python_quiz_3",
+      "type": "multiple-choice",
+      "title": "Cosa fa 'len()'?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "Conta gli elementi",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "Ordina",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "Concatena",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "Elimina",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "python-4-1",
+      "quiz_slug": "python_quiz_4",
+      "type": "multiple-choice",
+      "title": "Cosa stampa print(2 ** 3)?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "6",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "8",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "9",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "7",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "python-4-2",
+      "quiz_slug": "python_quiz_4",
+      "type": "multiple-choice",
+      "title": "Qual è la parola chiave per una funzione?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "def",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "func",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "function",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "lambda",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "python-4-3",
+      "quiz_slug": "python_quiz_4",
+      "type": "multiple-choice",
+      "title": "Come si dichiara una lista?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "list()",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "[]",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "{}",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "python-4-4",
+      "quiz_slug": "python_quiz_4",
+      "type": "multiple-choice",
+      "title": "Quale funzione converte una stringa in int?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "parseInt",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "toInt",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "int",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-4",
+          "title": "number",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "python-4-5",
+      "quiz_slug": "python_quiz_4",
+      "type": "multiple-choice",
+      "title": "Cosa fa 'len()'?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "Conta gli elementi",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "Ordina",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "Concatena",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "Elimina",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "python-5-1",
+      "quiz_slug": "python_quiz_5",
+      "type": "multiple-choice",
+      "title": "Cosa stampa print(2 ** 3)?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "6",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "8",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "9",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "7",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "python-5-2",
+      "quiz_slug": "python_quiz_5",
+      "type": "multiple-choice",
+      "title": "Qual è la parola chiave per una funzione?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "def",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "func",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "function",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "lambda",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "python-5-3",
+      "quiz_slug": "python_quiz_5",
+      "type": "multiple-choice",
+      "title": "Come si dichiara una lista?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "list()",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "[]",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "{}",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "python-5-4",
+      "quiz_slug": "python_quiz_5",
+      "type": "multiple-choice",
+      "title": "Quale funzione converte una stringa in int?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "parseInt",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "toInt",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "int",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-4",
+          "title": "number",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "python-5-5",
+      "quiz_slug": "python_quiz_5",
+      "type": "multiple-choice",
+      "title": "Cosa fa 'len()'?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "Conta gli elementi",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "Ordina",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "Concatena",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "Elimina",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "php-1-1",
+      "quiz_slug": "php_quiz_1",
+      "type": "multiple-choice",
+      "title": "Simbolo per variabili in PHP?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "@",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "$",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "#",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "&",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "php-1-2",
+      "quiz_slug": "php_quiz_1",
+      "type": "multiple-choice",
+      "title": "Come si stampa in PHP?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "print()",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "echo",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "write()",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "log()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "php-1-3",
+      "quiz_slug": "php_quiz_1",
+      "type": "multiple-choice",
+      "title": "Come si chiude un'istruzione PHP?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": ";",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": ".",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": ":",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "!",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "php-1-4",
+      "quiz_slug": "php_quiz_1",
+      "type": "multiple-choice",
+      "title": "Come si crea una funzione in PHP?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "function",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "def",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "lambda",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "fun",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "php-1-5",
+      "quiz_slug": "php_quiz_1",
+      "type": "multiple-choice",
+      "title": "Estensione file PHP?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": ".html",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": ".php",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": ".js",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": ".py",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "php-2-1",
+      "quiz_slug": "php_quiz_2",
+      "type": "multiple-choice",
+      "title": "Simbolo per variabili in PHP?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "@",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "$",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "#",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "&",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "php-2-2",
+      "quiz_slug": "php_quiz_2",
+      "type": "multiple-choice",
+      "title": "Come si stampa in PHP?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "print()",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "echo",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "write()",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "log()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "php-2-3",
+      "quiz_slug": "php_quiz_2",
+      "type": "multiple-choice",
+      "title": "Come si chiude un'istruzione PHP?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": ";",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": ".",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": ":",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "!",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "php-2-4",
+      "quiz_slug": "php_quiz_2",
+      "type": "multiple-choice",
+      "title": "Come si crea una funzione in PHP?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "function",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "def",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "lambda",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "fun",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "php-2-5",
+      "quiz_slug": "php_quiz_2",
+      "type": "multiple-choice",
+      "title": "Estensione file PHP?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": ".html",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": ".php",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": ".js",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": ".py",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "php-3-1",
+      "quiz_slug": "php_quiz_3",
+      "type": "multiple-choice",
+      "title": "Simbolo per variabili in PHP?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "@",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "$",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "#",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "&",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "php-3-2",
+      "quiz_slug": "php_quiz_3",
+      "type": "multiple-choice",
+      "title": "Come si stampa in PHP?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "print()",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "echo",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "write()",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "log()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "php-3-3",
+      "quiz_slug": "php_quiz_3",
+      "type": "multiple-choice",
+      "title": "Come si chiude un'istruzione PHP?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": ";",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": ".",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": ":",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "!",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "php-3-4",
+      "quiz_slug": "php_quiz_3",
+      "type": "multiple-choice",
+      "title": "Come si crea una funzione in PHP?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "function",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "def",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "lambda",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "fun",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "php-3-5",
+      "quiz_slug": "php_quiz_3",
+      "type": "multiple-choice",
+      "title": "Estensione file PHP?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": ".html",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": ".php",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": ".js",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": ".py",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "php-4-1",
+      "quiz_slug": "php_quiz_4",
+      "type": "multiple-choice",
+      "title": "Simbolo per variabili in PHP?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "@",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "$",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "#",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "&",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "php-4-2",
+      "quiz_slug": "php_quiz_4",
+      "type": "multiple-choice",
+      "title": "Come si stampa in PHP?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "print()",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "echo",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "write()",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "log()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "php-4-3",
+      "quiz_slug": "php_quiz_4",
+      "type": "multiple-choice",
+      "title": "Come si chiude un'istruzione PHP?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": ";",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": ".",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": ":",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "!",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "php-4-4",
+      "quiz_slug": "php_quiz_4",
+      "type": "multiple-choice",
+      "title": "Come si crea una funzione in PHP?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "function",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "def",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "lambda",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "fun",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "php-4-5",
+      "quiz_slug": "php_quiz_4",
+      "type": "multiple-choice",
+      "title": "Estensione file PHP?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": ".html",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": ".php",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": ".js",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": ".py",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "php-5-1",
+      "quiz_slug": "php_quiz_5",
+      "type": "multiple-choice",
+      "title": "Simbolo per variabili in PHP?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "@",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "$",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "#",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "&",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "php-5-2",
+      "quiz_slug": "php_quiz_5",
+      "type": "multiple-choice",
+      "title": "Come si stampa in PHP?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "print()",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "echo",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "write()",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "log()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "php-5-3",
+      "quiz_slug": "php_quiz_5",
+      "type": "multiple-choice",
+      "title": "Come si chiude un'istruzione PHP?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": ";",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": ".",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": ":",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "!",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "php-5-4",
+      "quiz_slug": "php_quiz_5",
+      "type": "multiple-choice",
+      "title": "Come si crea una funzione in PHP?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "function",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "def",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "lambda",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "fun",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "php-5-5",
+      "quiz_slug": "php_quiz_5",
+      "type": "multiple-choice",
+      "title": "Estensione file PHP?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": ".html",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": ".php",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": ".js",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": ".py",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "sql-1-1",
+      "quiz_slug": "sql_quiz_1",
+      "type": "multiple-choice",
+      "title": "Comando per selezionare tutti i dati?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "SELECT *",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "GET *",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "FETCH *",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "READ *",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "sql-1-2",
+      "quiz_slug": "sql_quiz_1",
+      "type": "multiple-choice",
+      "title": "Comando per eliminare una tabella?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "DELETE",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "DROP",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "REMOVE",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "CLEAR",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "sql-1-3",
+      "quiz_slug": "sql_quiz_1",
+      "type": "multiple-choice",
+      "title": "Clausola per filtrare risultati?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "WHERE",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "HAVING",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "GROUP BY",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "FILTER",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "sql-1-4",
+      "quiz_slug": "sql_quiz_1",
+      "type": "multiple-choice",
+      "title": "Come si uniscono due tabelle?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "UNION",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "JOIN",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "MERGE",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "CONNECT",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "sql-1-5",
+      "quiz_slug": "sql_quiz_1",
+      "type": "multiple-choice",
+      "title": "Quale comando modifica una tabella?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "ALTER",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "MODIFY",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "CHANGE",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "EDIT",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "sql-2-1",
+      "quiz_slug": "sql_quiz_2",
+      "type": "multiple-choice",
+      "title": "Comando per selezionare tutti i dati?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "SELECT *",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "GET *",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "FETCH *",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "READ *",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "sql-2-2",
+      "quiz_slug": "sql_quiz_2",
+      "type": "multiple-choice",
+      "title": "Comando per eliminare una tabella?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "DELETE",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "DROP",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "REMOVE",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "CLEAR",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "sql-2-3",
+      "quiz_slug": "sql_quiz_2",
+      "type": "multiple-choice",
+      "title": "Clausola per filtrare risultati?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "WHERE",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "HAVING",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "GROUP BY",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "FILTER",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "sql-2-4",
+      "quiz_slug": "sql_quiz_2",
+      "type": "multiple-choice",
+      "title": "Come si uniscono due tabelle?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "UNION",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "JOIN",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "MERGE",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "CONNECT",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "sql-2-5",
+      "quiz_slug": "sql_quiz_2",
+      "type": "multiple-choice",
+      "title": "Quale comando modifica una tabella?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "ALTER",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "MODIFY",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "CHANGE",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "EDIT",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "sql-3-1",
+      "quiz_slug": "sql_quiz_3",
+      "type": "multiple-choice",
+      "title": "Comando per selezionare tutti i dati?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "SELECT *",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "GET *",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "FETCH *",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "READ *",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "sql-3-2",
+      "quiz_slug": "sql_quiz_3",
+      "type": "multiple-choice",
+      "title": "Comando per eliminare una tabella?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "DELETE",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "DROP",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "REMOVE",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "CLEAR",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "sql-3-3",
+      "quiz_slug": "sql_quiz_3",
+      "type": "multiple-choice",
+      "title": "Clausola per filtrare risultati?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "WHERE",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "HAVING",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "GROUP BY",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "FILTER",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "sql-3-4",
+      "quiz_slug": "sql_quiz_3",
+      "type": "multiple-choice",
+      "title": "Come si uniscono due tabelle?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "UNION",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "JOIN",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "MERGE",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "CONNECT",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "sql-3-5",
+      "quiz_slug": "sql_quiz_3",
+      "type": "multiple-choice",
+      "title": "Quale comando modifica una tabella?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "ALTER",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "MODIFY",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "CHANGE",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "EDIT",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "sql-4-1",
+      "quiz_slug": "sql_quiz_4",
+      "type": "multiple-choice",
+      "title": "Comando per selezionare tutti i dati?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "SELECT *",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "GET *",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "FETCH *",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "READ *",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "sql-4-2",
+      "quiz_slug": "sql_quiz_4",
+      "type": "multiple-choice",
+      "title": "Comando per eliminare una tabella?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "DELETE",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "DROP",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "REMOVE",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "CLEAR",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "sql-4-3",
+      "quiz_slug": "sql_quiz_4",
+      "type": "multiple-choice",
+      "title": "Clausola per filtrare risultati?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "WHERE",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "HAVING",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "GROUP BY",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "FILTER",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "sql-4-4",
+      "quiz_slug": "sql_quiz_4",
+      "type": "multiple-choice",
+      "title": "Come si uniscono due tabelle?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "UNION",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "JOIN",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "MERGE",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "CONNECT",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "sql-4-5",
+      "quiz_slug": "sql_quiz_4",
+      "type": "multiple-choice",
+      "title": "Quale comando modifica una tabella?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "ALTER",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "MODIFY",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "CHANGE",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "EDIT",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "sql-5-1",
+      "quiz_slug": "sql_quiz_5",
+      "type": "multiple-choice",
+      "title": "Comando per selezionare tutti i dati?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "SELECT *",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "GET *",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "FETCH *",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "READ *",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "sql-5-2",
+      "quiz_slug": "sql_quiz_5",
+      "type": "multiple-choice",
+      "title": "Comando per eliminare una tabella?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "DELETE",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "DROP",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "REMOVE",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "CLEAR",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "sql-5-3",
+      "quiz_slug": "sql_quiz_5",
+      "type": "multiple-choice",
+      "title": "Clausola per filtrare risultati?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "WHERE",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "HAVING",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "GROUP BY",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "FILTER",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "sql-5-4",
+      "quiz_slug": "sql_quiz_5",
+      "type": "multiple-choice",
+      "title": "Come si uniscono due tabelle?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "UNION",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-2",
+          "title": "JOIN",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-3",
+          "title": "MERGE",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "CONNECT",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "sql-5-5",
+      "quiz_slug": "sql_quiz_5",
+      "type": "multiple-choice",
+      "title": "Quale comando modifica una tabella?",
+      "answers": [
+        {
+          "id": "answer-1",
+          "title": "ALTER",
+          "isCorrect": true
+        },
+        {
+          "id": "answer-2",
+          "title": "MODIFY",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-3",
+          "title": "CHANGE",
+          "isCorrect": false
+        },
+        {
+          "id": "answer-4",
+          "title": "EDIT",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

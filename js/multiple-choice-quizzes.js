@@ -1,51 +1,63 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const urlParams = new URLSearchParams(location.search);
-  const type = urlParams.get("type") || "scelta-multipla";
-  const language = urlParams.get("language") || "html";
+const main = document.querySelector("main");
 
-  const quizzesContainer = document.getElementById("quizzes");
+// Get the full query string (like ?subject=html&quiz=2)
+console.log({ location });
+const queryString = location.search;
 
-  const filePath =
-    type === "multiple-choice"
-      ? "./data/multiple-choice-quizzes.json"
-      : "./data/true-or-false-quizzes.json";
+// Initialize URLSearchParams with the query string
+const urlParams = new URLSearchParams(queryString);
+console.log({ urlParams });
+// Get specific parameters
+const language = urlParams.get("language");
+const type = urlParams.get("type");
 
-  fetch(filePath)
-    .then((res) => {
-      if (!res.ok) throw new Error(`HTTP error ${res.status}`);
-      return res.json();
+console.log({ language, type });
+if (!language) {
+  let languageNotFound = document.createElement("p");
+  languageNotFound.style.width = "100%";
+  languageNotFound.style.flex = 1;
+  languageNotFound.style.display = "flex";
+  languageNotFound.style.justifyContent = "center";
+  languageNotFound.style.alignItems = "center";
+  languageNotFound.style.fontSize = "24px";
+
+  languageNotFound.textContent =
+    "Hai scritto male il nome della materia, prova ad inserire bene il nome!";
+  main.appendChild(languageNotFound);
+} else {
+  // Add Language Name to HTML.
+  const lang = document.createElement("h1");
+  lang.textContent = `${language.toUpperCase()} - ${
+    type === "true-or-false" ? "Vero o Falso" : "Scelta multipla"
+  }`;
+
+  document.querySelector("main").insertAdjacentElement("afterbegin", lang);
+
+  // Add Quizzes to HTML
+  fetch("../data/quizzes-multiple-choice.json")
+    .then((response) => {
+      console.log({ response });
+      if (!response.ok) {
+        throw new Error("File not found!");
+      }
+      return response.json();
     })
     .then((data) => {
-      console.log("DATA LOADED:", data);
-      const byType = data[type];
-      if (!byType) {
-        quizzesContainer.textContent = "Tipo di quiz non valido.";
-        return;
-      }
-
-      const languageGroup = byType.find(
-        (group) => group.language_slug === language
+      console.log({ data });
+      const filtredQuizzes = data.quizzes.filter(
+        (quiz) => quiz.type === type && quiz.language_slug === language
       );
-      if (!languageGroup) {
-        quizzesContainer.textContent = "Nessuna lingua corrispondente.";
-        return;
-      }
-
-      quizzesContainer.innerHTML = "";
-      for (const quiz of languageGroup.quizzes) {
-        const a = document.createElement("a");
-        a.className = "card";
-        a.href = `questions.html?quiz_slug=${quiz.slug}&type=${quiz.type}`;
-
-        const h3 = document.createElement("h3");
-        h3.textContent = quiz.name;
-        a.appendChild(h3);
-
-        quizzesContainer.appendChild(a);
+      console.log({ filtredQuizzes });
+      for (let quiz of filtredQuizzes) {
+        const quizzesContainer = document.getElementById(
+          "quizzes"
+        );
+        const quizItem = document.createElement("a");
+        quizItem.className = "card";
+        quizItem.href = `/questions.html?quiz_slug=${quiz.slug}`;
+        quizItem.textContent = quiz.name;
+        quizzesContainer.appendChild(quizItem);
       }
     })
-    .catch((err) => {
-      console.error("Fetch error:", err);
-      quizzesContainer.textContent = "Errore nel caricamento dei quiz.";
-    });
-});
+    .catch((err) => console.error(err));
+}

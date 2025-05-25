@@ -14,7 +14,7 @@ fetch("./data/back-end-languages.json")
       }
       let a = document.createElement("a");
       a.className = "language-item";
-      a.href = `/true-or-false-quizzes.html?language=${language.slug}&type=${type}`;
+      a.href = `/multiple-choice-quizzes.html?language=${language.slug}&type=${type}`;
       a.style.backgroundColor = language.color;
       let titleElement = document.createElement("h2");
       titleElement.textContent = language.name;
