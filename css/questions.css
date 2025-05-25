@@ -42,7 +42,7 @@
   flex-direction: column;
   gap: 12px;
   align-items: stretch;
-  min-height: 250px;
+  /* min-height: 250px; */
   flex: 1;
 }
 

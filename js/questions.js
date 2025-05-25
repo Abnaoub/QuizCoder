@@ -1,5 +1,6 @@
 const main = document.querySelector("main");
-var questionsElement = document.querySelector("#domande");
+const questionsElement = document.querySelector("#domande");
+const correctAnswerEl = document.querySelector(".correct-answer");
 
 const queryString = location.search;
 
@@ -94,7 +95,7 @@ function initQuiz() {
     const question = allQuestions[currentIndex];
     titleEl.textContent = question.title;
     answersEl.innerHTML = "";
-
+    correctAnswerEl.innerHTML = "";
     question.answers.forEach((answer) => {
       const wrapper = document.createElement("div");
       wrapper.className = "answer-item";
@@ -120,12 +121,24 @@ function initQuiz() {
 
       const label = document.createElement("label");
       label.htmlFor = answer.id;
-      label.textContent = answer.title;
+      label.textContent = answer.title ? "Vero" : "Falso";
       label.classList.add("input-label");
 
       wrapper.append(input, label);
       answersEl.append(wrapper);
     });
+    // Correct Answer
+    if (isQuizCompleted) {
+      const correctAnswerValue = question.answers.find(
+        (answer) => answer.isCorrect === true
+      ).title;
+
+      correctAnswerEl.style.color = "white";
+      correctAnswerEl.textContent = `La risposta corretta e': ${
+        correctAnswerValue ? "Vero" : "Falso"
+      }`;
+      AnswersSectionEl.appendChild(correctAnswerEl);
+    }
 
     prevBtn.disabled = currentIndex === 0;
     nextBtn.textContent =
