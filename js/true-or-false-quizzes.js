@@ -44,7 +44,8 @@ if (!language) {
       return response.json();
     })
     .then((data) => {
-      console.log({ data });
+      const lastQuizzes = localStorage.getItem("last-quizzes");
+      const lastQuizzesParsed = JSON.parse(lastQuizzes);
       const filtredQuizzes = data.quizzes.filter(
         (quiz) => quiz.type === type && quiz.language_slug === language
       );
@@ -53,10 +54,36 @@ if (!language) {
         const quizzesContainer = document.getElementById(
           "true-or-false-quizzes"
         );
-        const quizItem = document.createElement("a");
-        quizItem.className = "card";
-        quizItem.href = `/questions.html?quiz_slug=${quiz.slug}`;
+        const isDone = lastQuizzesParsed.find(
+          (lastQuiz) => lastQuiz.slug === quiz.slug
+        );
+        const quizItem = document.createElement(isDone ? "button" : "a");
+        quizItem.disabled = isDone;
+        console.log({
+          disabled: lastQuizzesParsed.find((quiz) => quiz.slug === quiz.slug),
+        });
+        quizItem.classList.add("card");
+        if (isDone) {
+          quizItem.classList.add("isDisabled");
+        }
+        quizItem.href = isDone ? "" : `/questions.html?quiz_slug=${quiz.slug}`;
         quizItem.textContent = quiz.name;
+        quizItem.style.position = 'relative'
+
+        const tagEl = document.createElement("div");
+        tagEl.style.position = "absolute";
+        tagEl.style.top = "0";
+        tagEl.style.right = "0";
+        tagEl.style.padding = "8px";
+        tagEl.style.backgroundColor = "violet";
+        tagEl.style.borderBottomLeftRadius = "16px";
+        tagEl.innerHTML = `
+        Quiz Completato
+    `;
+        if (isDone) {
+          quizItem.appendChild(tagEl);
+        }
+
         quizzesContainer.appendChild(quizItem);
       }
     })

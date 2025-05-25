@@ -6,6 +6,17 @@
   width: 70%;
 }
 
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.isDisabled:hover{
+  text-decoration: none;
+}
+
 /* .quiz-item {
     height: 150px;
     border-radius: 12px;

@@ -14,7 +14,7 @@ const header = `
         </div>
         <a href="/true-or-false.html">Vero o false</a>
         <a href="/multiple-choice.html">Scelta multipla</a>
-        <a href="/last-quiz.html">Ultimi quiz</a>
+        <a href="/last-quizzes.html">Ultimi quiz</a>
       </nav>
     </header>
 `;

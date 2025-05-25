@@ -1,0 +1,7 @@
+.quiz-items-container {
+  display: flex;
+  flex-direction: column;
+  margin: 36px auto;
+  gap: 32px;
+  width: 70%;
+}

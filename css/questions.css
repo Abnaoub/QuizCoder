@@ -79,10 +79,17 @@
 }
 
 /* Effetto hover sull'intera answer-item */
-.answer-item:hover {
+.answer-item:not(.disabled):hover {
   background-color: rgba(255, 255, 255, 0.2);
   border-color: #fff;
 }
+
+.answer-item.disabled, .answer-item.disabled input, .answer-item.disabled label {
+  cursor: not-allowed;
+}
+
+
+
 
 .answer-item:hover label {
   color: #fff;

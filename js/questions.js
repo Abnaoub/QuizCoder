@@ -15,9 +15,14 @@ const backendLanguages = ["nodejs", "python", "php", "sql"];
 
 const currentLanguage = quizSlug.split("_")[0];
 const isFrontendQuiz = frontendLanguages.includes(currentLanguage);
-const questionsPath = isFrontendQuiz ? "../data/true-or-false-questions.json" : "../data/multiple-choice-questions.json";
-const quizPath = isFrontendQuiz ? "../data/quizzes-true-or-false.json" : "../data/quizzes-multiple-choice.json";
+const questionsPath = isFrontendQuiz
+  ? "../data/true-or-false-questions.json"
+  : "../data/multiple-choice-questions.json";
+const quizPath = isFrontendQuiz
+  ? "../data/quizzes-true-or-false.json"
+  : "../data/quizzes-multiple-choice.json";
 let allQuestions;
+let isQuizCompleted;
 
 fetch(questionsPath)
   .then((response) => response.json())
@@ -25,7 +30,7 @@ fetch(questionsPath)
     allQuestions = data.questions.filter(
       (quesion) => quesion.quiz_slug === quizSlug
     );
-    initQuiz(data)
+    initQuiz(data);
   })
   .catch((err) => {
     document.getElementById("question-title").textContent =
@@ -34,10 +39,17 @@ fetch(questionsPath)
   });
 
 function initQuiz() {
-
-  console.log({ allQuestions, allQuestions });
+  let selectedAnswers = {}; // { questionId: answerId }
+  const lastQuizzes = localStorage.getItem("last-quizzes");
+  if (lastQuizzes) {
+    const parsed = JSON.parse(lastQuizzes);
+    const completedQuiz = parsed.find((quiz) => quiz.slug === quizSlug);
+    if (completedQuiz) {
+      isQuizCompleted = true;
+      selectedAnswers = completedQuiz.answers;
+    }
+  }
   let currentIndex = 0;
-  const selectedAnswers = {} // { questionId: answerId }
 
   const titleEl = document.getElementById("question-title");
   const answersEl = document.getElementById("answers-list");
@@ -86,12 +98,16 @@ function initQuiz() {
     question.answers.forEach((answer) => {
       const wrapper = document.createElement("div");
       wrapper.className = "answer-item";
+      if (isQuizCompleted) {
+        wrapper.classList.add("disabled");
+      }
 
       const input = document.createElement("input");
       input.type = "radio";
       input.name = question.id;
       input.id = answer.id;
       input.value = answer.id;
+      input.disabled = isQuizCompleted;
       if (selectedAnswers[question.id] === answer.id) input.checked = true;
       input.addEventListener("click", () => {
         selectedAnswers[question.id] = answer.id;
@@ -112,7 +128,12 @@ function initQuiz() {
     });
 
     prevBtn.disabled = currentIndex === 0;
-    nextBtn.textContent = currentIndex === allQuestions.length - 1 ? "Concludi" : "Avanti";
+    nextBtn.textContent =
+      currentIndex === allQuestions.length - 1
+        ? isQuizCompleted
+          ? "Ultimi Quiz"
+          : "Concludi"
+        : "Avanti";
 
     updateProgressIndicator();
   }
@@ -131,37 +152,60 @@ function initQuiz() {
   }
 
   function finishQuiz() {
-    console.log('FINISH QUIZ')
-    saveQuiz();
+    if (isQuizCompleted) {
+      location.href = "/last-quizzes.html";
+    } else {
+      saveQuiz();
+    }
   }
 
   function saveQuiz() {
-    const lastQuizzes = localStorage.getItem('last-quizzes');
+    const lastQuizzes = localStorage.getItem("last-quizzes");
     let score = 0;
-    const selectedQuiz = quizData.quizzes.find(quiz => quiz.slug === quizSlug);
-    console.log({allQuestions})
+    const selectedQuiz = quizData.quizzes.find(
+      (quiz) => quiz.slug === quizSlug
+    );
+    console.log({ selectedQuiz });
 
-    for(let [questionId, answerId] of Object.entries(selectedAnswers)) {
-      console.log({questionId, answerId})
-      const question = allQuestions.find(q => q.id === questionId);
-      console.log({question})
+    for (let [questionId, answerId] of Object.entries(selectedAnswers)) {
+      console.log({ questionId, answerId });
+      const question = allQuestions.find((q) => q.id === questionId);
+      console.log({ question });
       if (question) {
-        const answer = question.answers.find(a => a.id === answerId);
+        const answer = question.answers.find((a) => a.id === answerId);
         if (answer && answer.isCorrect) {
-          score += 1
+          score += 1;
         }
       }
     }
 
-    if(!lastQuizzes){
-      localStorage.setItem('last-quizzes', JSON.stringify([{id: quizSlug, type: selectedQuiz.type, answers: selectedAnswers, score}]))
-    }
-    else {
+    if (!lastQuizzes) {
+      localStorage.setItem(
+        "last-quizzes",
+        JSON.stringify([
+          {
+            slug: quizSlug,
+            name: selectedQuiz.name,
+            language: selectedQuiz.language_slug,
+            type: selectedQuiz.type,
+            answers: selectedAnswers,
+            score,
+          },
+        ])
+      );
+    } else {
       const parsed = JSON.parse(lastQuizzes);
-      parsed.push({id: quizSlug, type: selectedQuiz.type, answers: selectedAnswers, score});
-      localStorage.setItem('last-quizzes', JSON.stringify(parsed));
+      parsed.push({
+        slug: quizSlug,
+        name: selectedQuiz.name,
+        language: selectedQuiz.language_slug,
+        type: selectedQuiz.type,
+        answers: selectedAnswers,
+        score,
+      });
+      localStorage.setItem("last-quizzes", JSON.stringify(parsed));
     }
-    location.href = '/last-quiz.html'
+    location.href = "/last-quizzes.html";
   }
 
   prevBtn.addEventListener("click", () => {
