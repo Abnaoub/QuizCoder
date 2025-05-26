@@ -10,13 +10,14 @@ const header = `
 
       <nav class="nav" id="nav-menu">
         <div class="dropdown">
-          <a href="/">Home</a>
+          <a href="/">HOME</a>
         </div>
-        <a href="/true-or-false.html">Vero o false</a>
-        <a href="/multiple-choice.html">Scelta multipla</a>
-        <a href="/last-quizzes.html">Ultimi quiz</a>
+        <a href="/true-or-false.html">VERO O FALSO</a>
+        <a href="/multiple-choice.html">SCELTA MULTIPLA</a>
+        <a href="/last-quizzes.html">ULTIMI QUIZZES</a>
+        <a>CONTATTACI</a>
       </nav>
     </header>
-`;
+`
 
 document.body.insertAdjacentHTML("afterbegin", header);

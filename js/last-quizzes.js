@@ -1,6 +1,7 @@
 const lastQuizzesEl = document.getElementById("last-quizzes");
 
 const lastQuizzes = localStorage.getItem("last-quizzes");
+// localStorage.clear()
 if (!lastQuizzes) {
   const NotFoundParagraph = document.createElement("p");
   NotFoundParagraph.textContent = "Nessun quiz trovato";

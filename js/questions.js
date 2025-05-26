@@ -14,6 +14,7 @@ let quizData;
 const frontendLanguages = ["html", "css", "javascript", "vue"];
 const backendLanguages = ["nodejs", "python", "php", "sql"];
 
+
 const currentLanguage = quizSlug.split("_")[0];
 const isFrontendQuiz = frontendLanguages.includes(currentLanguage);
 const questionsPath = isFrontendQuiz
@@ -229,7 +230,7 @@ function initQuiz() {
   });
 
   nextBtn.addEventListener("click", () => {
-    if (currentIndex < allQuestions.length - 1) {
+    if (currentIndex < allQuestions.length - 1) { 4 < 4
       currentIndex++;
       render();
     } else {

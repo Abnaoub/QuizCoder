@@ -6,15 +6,9 @@ fetch("./data/back-end-languages.json")
   .then((data) => {
     console.log({data})
     for (let language of data.languages) {
-      let type;
-      if (location.pathname === "/true-or-false-questions.html") {
-        type = "true-or-false";
-      } else {
-        type = "multiple-choice";
-      }
       let a = document.createElement("a");
       a.className = "language-item";
-      a.href = `/multiple-choice-quizzes.html?language=${language.slug}&type=${type}`;
+      a.href = `/multiple-choice-quizzes.html?language=${language.slug}&type=multiple-choice`;
       a.style.backgroundColor = language.color;
       let titleElement = document.createElement("h2");
       titleElement.textContent = language.name;

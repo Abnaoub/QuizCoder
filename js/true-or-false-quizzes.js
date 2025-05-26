@@ -1,7 +1,6 @@
 const main = document.querySelector("main");
 var schoolSubjectsElement = document.querySelector("#quizzes-vero-o-falso");
 
-// Get the full query string (like ?subject=html&quiz=2)
 console.log({ location });
 const queryString = location.search;
 
@@ -10,6 +9,7 @@ const urlParams = new URLSearchParams(queryString);
 console.log({ urlParams });
 // Get specific parameters
 const language = urlParams.get("language");
+console.log({language})
 const type = urlParams.get("type");
 
 console.log({ language, type });
@@ -45,8 +45,13 @@ if (!language) {
     })
     .then((data) => {
       const lastQuizzes = localStorage.getItem("last-quizzes");
-      const lastQuizzesParsed = JSON.parse(lastQuizzes);
-      const filtredQuizzes = data.quizzes.filter(
+      let filtredQuizzes = []
+      let lastQuizzesParsed = []
+      if(lastQuizzes){
+        lastQuizzesParsed = JSON.parse(lastQuizzes);
+        
+      }
+      filtredQuizzes = data.quizzes.filter(
         (quiz) => quiz.type === type && quiz.language_slug === language
       );
       console.log({ filtredQuizzes });

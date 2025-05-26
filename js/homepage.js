@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       return response.json();
     })
-    .then((json) => {
-      json.questionTypes.forEach((type) => {
+    .then((questionTypes) => {
+      questionTypes.questionTypes.forEach((type) => {
         const a = document.createElement("a");
         a.className = "question_type_item";
         a.href = type.slug;

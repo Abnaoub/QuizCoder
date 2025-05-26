@@ -45,7 +45,10 @@ if (!language) {
     .then((data) => {
       console.log({ data });
       const lastQuizzes = localStorage.getItem("last-quizzes");
-      const lastQuizzesParsed = JSON.parse(lastQuizzes);
+      let lastQuizzesParsed = [];
+      if (lastQuizzes) {
+        lastQuizzesParsed = JSON.parse(lastQuizzes);
+      }
       const filtredQuizzes = data.quizzes.filter(
         (quiz) => quiz.type === type && quiz.language_slug === language
       );
@@ -56,7 +59,7 @@ if (!language) {
           (lastQuiz) => lastQuiz.slug === quiz.slug
         );
         const quizItem = document.createElement(isDone ? "button" : "a");
-        quizItem.style.position = 'relative'
+        quizItem.style.position = "relative";
         quizItem.disabled = isDone;
         quizItem.classList.add("card");
         if (isDone) {
