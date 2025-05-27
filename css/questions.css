@@ -31,7 +31,7 @@
   }
 }
 
-/* Titolo della domanda */
+
 .quiz-container h1 {
   font-size: 1.8rem;
   font-weight: 600;
@@ -43,18 +43,17 @@
   justify-content: center;
 }
 
-/* Lista delle risposte */
+
 .answers-list {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 12px;
   align-items: stretch;
-  /* min-height: 250px; */
   flex: 1;
 }
 
-/* Singola risposta */
+
 .answer-item {
   display: flex;
   align-items: center;
@@ -73,20 +72,20 @@
   text-align: left;
 }
 
-/* Stile input radio nascosto, useremo solo il label */
+
 .answer-item input[type="radio"] {
   opacity: 0;
   position: absolute;
 }
 
-/* Label che funge da “pulsante” della risposta */
+
 .answer-item label {
   flex: 1;
   cursor: pointer;
   color: white;
 }
 
-/* Effetto hover sull'intera answer-item */
+
 .answer-item:not(.disabled):hover {
   background-color: rgba(255, 255, 255, 0.2);
   border-color: #fff;
@@ -103,7 +102,7 @@
   color: #fff;
 }
 
-/* Stile quando la risposta è selezionata */
+
 .answer-item input[type="radio"]:checked + label {
   font-weight: 600;
   color: #111;
@@ -111,7 +110,7 @@
 }
 
 
-/* Question section */
+
 .question-section {
   width: 100%;
   padding: 20px;
@@ -120,7 +119,7 @@
   background-color: rgba(142, 97, 245, 0.1);
 }
 
-/* Answers section */
+
 .answers-section {
   width: 100%;
   flex: 1;
@@ -128,7 +127,7 @@
   flex-direction: column;
 }
 
-/* Pulsanti di navigazione */
+
 .navigation-buttons {
   margin-top: 30px;
   padding: 15px 0;
@@ -147,7 +146,7 @@
   }
 }
 
-/* Progress indicator */
+
 .progress-indicator {
   height: 25px;
   width: 300px;
@@ -176,7 +175,6 @@
 
 .navigation-buttons button {
   padding: 12px 25px;
-  /* width: 120px; */
   font-size: 1rem;
   font-weight: 500;
   border: none;
@@ -187,20 +185,11 @@
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* @media (max-width: 768px) {
-  .navigation-buttons button {
-    width: 90px;
-    padding: 10px 15px;
-    font-size: 0.9rem;
-  }
-} */
-
-/* Hover sui button */
 .navigation-buttons button:hover:not(:disabled) {
   background-color: #004494;
 }
 
-/* Stato disabled */
+
 .navigation-buttons button:disabled {
   background-color: #aaa;
   opacity: 0.6;

@@ -4,10 +4,10 @@ const correctAnswerEl = document.querySelector(".correct-answer");
 
 const queryString = location.search;
 
-// Initialize URLSearchParams with the query string
+
 const urlParams = new URLSearchParams(queryString);
 console.log({ urlParams });
-// Get specific parameters
+
 const quizSlug = urlParams.get("quiz_slug");
 let quizData;
 
@@ -54,7 +54,7 @@ function fetchQuizData() {
     });
 }
 function initQuiz() {
-  let selectedAnswers = {}; // { questionId: answerId }
+  let selectedAnswers = {}; 
   const lastQuizzes = localStorage.getItem("last-quizzes");
   if (lastQuizzes) {
     const parsed = JSON.parse(lastQuizzes);
@@ -139,14 +139,14 @@ function initQuiz() {
           ? answer.title
             ? "Vero"
             : "Falso"
-            // true - false
+
           : answer.title;
       label.classList.add("input-label");
 
       wrapper.append(input, label);
       answersEl.append(wrapper);
     });
-    // Correct Answer
+
     if (isQuizCompleted) {
       const correctAnswerValue = question.answers.find(
         (answer) => answer.isCorrect === true

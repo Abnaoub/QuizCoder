@@ -1,7 +1,10 @@
 const lastQuizzesEl = document.getElementById("last-quizzes");
 
 const lastQuizzes = localStorage.getItem("last-quizzes");
-if (!lastQuizzes) {
+const isUserSubscribed = localStorage.getItem("subscribed");
+if (!isUserSubscribed) {
+  location.href = '/subscribe.html'
+} else if (!lastQuizzes) {
   const NotFoundParagraph = document.createElement("p");
   NotFoundParagraph.textContent = "Nessun quiz trovato";
   NotFoundParagraph.style.textAlign = "center";
@@ -24,7 +27,7 @@ if (!lastQuizzes) {
 
     // Scelta Multipla o Vero o falso
     const quizType = document.createElement("p");
-    quizType.style.fontSize = '18px'
+    quizType.style.fontSize = "18px";
     quizType.textContent =
       quiz.type === "true-or-false" ? "Vero o falso" : "Scelta multipla";
     quizEl.appendChild(quizType);

@@ -1,24 +1,3 @@
-// const header = `
-//     <header class="header" id="header">
-//       <a href="/" class="logo">QuizCoder</a>
-//       <label class="burger" for="burger">
-//         <input type="checkbox" id="burger" />
-//         <span></span>
-//         <span></span>
-//         <span></span>
-//       </label>
-
-//       <nav class="nav" id="nav-menu">
-//         <a href="/">HOME</a>
-//         <a href="/true-or-false.html">VERO O FALSO</a>
-//         <a href="/multiple-choice.html">SCELTA MULTIPLA</a>
-//         <a href="/last-quizzes.html">ULTIMI QUIZZES</a>
-//         <a href="/contact-us.html">ISCRIVITI!</a>
-//       </nav>
-//     </header>
-// `
-
-// document.body.insertAdjacentHTML("afterbegin", header);
 const header = `
   <header class="header" id="header">
     <a href="/" class="logo">QuizCoder</a>
@@ -33,7 +12,7 @@ const header = `
       <a href="/true-or-false.html">VERO O FALSO</a>
       <a href="/multiple-choice.html">SCELTA MULTIPLA</a>
       <a href="/last-quizzes.html">ULTIMI QUIZZES</a>
-      <a href="/contact-us.html">ISCRIVITI!</a>
+      <a id="subscribe-anchor" href="/subscribe.html">ISCRIVITI!</a>
     </nav>
   </header>
 `;
@@ -47,3 +26,14 @@ burgerBtn.addEventListener("click", () => {
   navMenu.classList.toggle("nav-active");
   burgerBtn.classList.toggle("open");
 });
+
+function toggleSubscribeAnchor() {
+  let subscribed = localStorage.getItem('subscribed')
+  const subscribeAnchor = document.getElementById('subscribe-anchor')
+  if(subscribed){
+    console.log('SUBSCRIBED!!!!')
+    subscribeAnchor.remove()
+  }
+}
+
+toggleSubscribeAnchor()

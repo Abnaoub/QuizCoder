@@ -15,26 +15,37 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/contact-us.css" />
+    <link rel="stylesheet" href="css/subscribe.css" />
     <script src="js/header.js" defer></script>
     <script src="js/footer.js" defer></script>
-    <script src="js/contact-us.js" defer></script>
+    <script src="js/subscribe.js" defer></script>
   </head>
 
   <body>
     <!-- Start Main -->
     <main>
-      <h1>Iscriviti</h1>
-      <form id="emailForm">
-        <input
-          type="email"
-          id="email"
-          placeholder="Inserisci la tua email"
-          required
-        />
-        <button type="submit">Invia</button>
-      </form>
-      <p id="responseMessage"></p>
+      <div class="subscribe-container">
+        <div class="subscribe-content">
+          <h1>Vuoi vedere gli ultimi quiz risolti?</h1>
+          <p>
+            Iscriviti con la tua email per ricevere l'accesso immediato alla
+            pagina ultimi quiz, per sapere che cosa hai sbagliato e le risposte
+            corrette.
+          </p>
+        </div>
+
+        <form id="emailForm">
+          <label for="email">Inserisci la tua email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Inserisci la tua email"
+            required
+          />
+          <button type="submit">Invia</button>
+          <p id="responseMessage"></p>
+        </form>
+      </div>
     </main>
     <!-- End Main -->
   </body>

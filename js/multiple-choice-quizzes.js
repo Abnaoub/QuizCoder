@@ -1,13 +1,12 @@
 const main = document.querySelector("main");
 
-// Get the full query string (like ?subject=html&quiz=2)
 console.log({ location });
 const queryString = location.search;
 
-// Initialize URLSearchParams with the query string
 const urlParams = new URLSearchParams(queryString);
 console.log({ urlParams });
-// Get specific parameters
+
+
 const language = urlParams.get("language");
 const type = urlParams.get("type");
 
@@ -29,7 +28,7 @@ console.log({ language, type });
 if (!language) {
   notFoundLanguage();
 } else {
-  // Add Language Name to HTML.
+
   const lang = document.createElement("h1");
   lang.textContent = `${language.toUpperCase()} - ${
     type === "true-or-false" ? "Vero o Falso" : "Scelta multipla"
@@ -37,7 +36,6 @@ if (!language) {
 
   document.querySelector("main").insertAdjacentElement("afterbegin", lang);
 
-  // Add Quizzes to HTML
   fetch("../data/quizzes-multiple-choice.json")
     .then((response) => {
       console.log({ response });
@@ -71,7 +69,6 @@ if (!language) {
         }
         quizItem.href = isDone ? "" : `/questions.html?quiz_slug=${quiz.slug}`;
         quizItem.textContent = quiz.name;
-        // quizItem.style.position = 'relative'
 
         const tagEl = document.createElement("div");
         tagEl.style.position = "absolute";
