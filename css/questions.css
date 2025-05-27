@@ -13,13 +13,21 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Media query per schermi mobili */
 @media (max-width: 768px) {
   .quiz-container {
-    width: 95%;
-    margin: 20px auto;
-    padding: 15px;
+    width: 100%;
     min-height: auto;
+  }
+  .navigation-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .navigation-buttons div{
+    order: 1;
+  }
+  .navigation-buttons button {
+    width: 100%;
   }
 }
 
@@ -166,10 +174,9 @@
   border-radius: 5px;
 }
 
-/* Stile base dei button */
 .navigation-buttons button {
   padding: 12px 25px;
-  width: 120px;
+  /* width: 120px; */
   font-size: 1rem;
   font-weight: 500;
   border: none;
@@ -180,13 +187,13 @@
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .navigation-buttons button {
     width: 90px;
     padding: 10px 15px;
     font-size: 0.9rem;
   }
-}
+} */
 
 /* Hover sui button */
 .navigation-buttons button:hover:not(:disabled) {

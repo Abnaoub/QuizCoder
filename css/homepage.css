@@ -10,6 +10,7 @@ main {
   align-items: center;
   gap: 32px;
   width: 90%;
+  text-align: center;
 }
 
 @media (max-width: 992px) {
@@ -47,7 +48,7 @@ main {
 }
 
 .question_type_item p:first-of-type {
-  font-size: 48px;
+  font-size: 32px;
   margin-bottom: 32px;
 }
 .question_type_item:active {
@@ -58,6 +59,8 @@ main {
 }
 
 .select-questions-type {
-  margin-top: 32px;
+  margin-top: 64px;
   margin-bottom: 32px;
+  text-align: center;
+
 }

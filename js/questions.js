@@ -14,7 +14,6 @@ let quizData;
 const frontendLanguages = ["html", "css", "javascript", "vue"];
 const backendLanguages = ["nodejs", "python", "php", "sql"];
 
-
 const currentLanguage = quizSlug.split("_")[0];
 const isFrontendQuiz = frontendLanguages.includes(currentLanguage);
 const questionsPath = isFrontendQuiz
@@ -32,7 +31,7 @@ fetch(questionsPath)
     allQuestions = data.questions.filter(
       (quesion) => quesion.quiz_slug === quizSlug
     );
-    initQuiz(data);
+    fetchQuizData();
   })
   .catch((err) => {
     document.getElementById("question-title").textContent =
@@ -40,6 +39,20 @@ fetch(questionsPath)
     console.error(err);
   });
 
+
+function fetchQuizData() {
+  fetch(quizPath)
+    .then((response) => response.json())
+    .then((data) => {
+      quizData = data.quizzes.find((quiz) => quiz.slug === quizSlug);
+      initQuiz(data);
+    })
+    .catch((err) => {
+      document.getElementById("question-title").textContent =
+        "Errore nel caricamento domande";
+      console.error(err);
+    });
+}
 function initQuiz() {
   let selectedAnswers = {}; // { questionId: answerId }
   const lastQuizzes = localStorage.getItem("last-quizzes");
@@ -103,7 +116,6 @@ function initQuiz() {
       if (isQuizCompleted) {
         wrapper.classList.add("disabled");
       }
-
       const input = document.createElement("input");
       input.type = "radio";
       input.name = question.id;
@@ -122,7 +134,13 @@ function initQuiz() {
 
       const label = document.createElement("label");
       label.htmlFor = answer.id;
-      label.textContent = answer.title ? "Vero" : "Falso";
+      label.textContent =
+        quizData.type === "true-or-false"
+          ? answer.title
+            ? "Vero"
+            : "Falso"
+            // true - false
+          : answer.title;
       label.classList.add("input-label");
 
       wrapper.append(input, label);
@@ -135,10 +153,9 @@ function initQuiz() {
       ).title;
 
       correctAnswerEl.style.color = "white";
-      correctAnswerEl.textContent = `La risposta corretta e': ${
+      correctAnswerEl.textContent = `La risposta corretta è: ${
         correctAnswerValue ? "Vero" : "Falso"
       }`;
-      AnswersSectionEl.appendChild(correctAnswerEl);
     }
 
     prevBtn.disabled = currentIndex === 0;
@@ -152,19 +169,6 @@ function initQuiz() {
     updateProgressIndicator();
   }
 
-  function fetchQuizData() {
-    fetch(quizPath)
-      .then((response) => response.json())
-      .then((data) => {
-        quizData = data;
-      })
-      .catch((err) => {
-        document.getElementById("question-title").textContent =
-          "Errore nel caricamento domande";
-        console.error(err);
-      });
-  }
-
   function finishQuiz() {
     if (isQuizCompleted) {
       location.href = "/last-quizzes.html";
@@ -176,11 +180,6 @@ function initQuiz() {
   function saveQuiz() {
     const lastQuizzes = localStorage.getItem("last-quizzes");
     let score = 0;
-    const selectedQuiz = quizData.quizzes.find(
-      (quiz) => quiz.slug === quizSlug
-    );
-    console.log({ selectedQuiz });
-
     for (let [questionId, answerId] of Object.entries(selectedAnswers)) {
       console.log({ questionId, answerId });
       const question = allQuestions.find((q) => q.id === questionId);
@@ -199,9 +198,9 @@ function initQuiz() {
         JSON.stringify([
           {
             slug: quizSlug,
-            name: selectedQuiz.name,
-            language: selectedQuiz.language_slug,
-            type: selectedQuiz.type,
+            name: quizData.name,
+            language: quizData.language_slug,
+            type: quizData.type,
             answers: selectedAnswers,
             score,
           },
@@ -211,9 +210,9 @@ function initQuiz() {
       const parsed = JSON.parse(lastQuizzes);
       parsed.push({
         slug: quizSlug,
-        name: selectedQuiz.name,
-        language: selectedQuiz.language_slug,
-        type: selectedQuiz.type,
+        name: quizData.name,
+        language: quizData.language_slug,
+        type: quizData.type,
         answers: selectedAnswers,
         score,
       });
@@ -230,7 +229,8 @@ function initQuiz() {
   });
 
   nextBtn.addEventListener("click", () => {
-    if (currentIndex < allQuestions.length - 1) { 4 < 4
+    if (currentIndex < allQuestions.length - 1) {
+      4 < 4;
       currentIndex++;
       render();
     } else {
@@ -238,5 +238,5 @@ function initQuiz() {
     }
   });
   render();
-  fetchQuizData();
 }
+

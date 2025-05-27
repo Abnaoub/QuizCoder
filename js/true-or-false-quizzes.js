@@ -1,13 +1,9 @@
 const main = document.querySelector("main");
 var schoolSubjectsElement = document.querySelector("#quizzes-vero-o-falso");
 
-console.log({ location });
 const queryString = location.search;
-
-// Initialize URLSearchParams with the query string
 const urlParams = new URLSearchParams(queryString);
-console.log({ urlParams });
-// Get specific parameters
+
 const language = urlParams.get("language");
 console.log({language})
 const type = urlParams.get("type");
@@ -26,7 +22,6 @@ if (!language) {
     "Hai scritto male il nome della materia, prova ad inserire bene il nome!";
   main.appendChild(languageNotFound);
 } else {
-  // Add Language Name to HTML.
   const lang = document.createElement("h1");
   lang.textContent = `${language.toUpperCase()} - ${
     type === "true-or-false" ? "Vero o Falso" : "Scelta multipla"
@@ -34,7 +29,6 @@ if (!language) {
 
   document.querySelector("main").insertAdjacentElement("afterbegin", lang);
 
-  // Add Quizzes to HTML
   fetch("../data/quizzes-true-or-false.json")
     .then((response) => {
       console.log({ response });
@@ -54,7 +48,6 @@ if (!language) {
       filtredQuizzes = data.quizzes.filter(
         (quiz) => quiz.type === type && quiz.language_slug === language
       );
-      console.log({ filtredQuizzes });
       for (let quiz of filtredQuizzes) {
         const quizzesContainer = document.getElementById(
           "true-or-false-quizzes"

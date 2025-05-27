@@ -11,8 +11,7 @@ console.log({ urlParams });
 const language = urlParams.get("language");
 const type = urlParams.get("type");
 
-console.log({ language, type });
-if (!language) {
+function notFoundLanguage() {
   let languageNotFound = document.createElement("p");
   languageNotFound.style.width = "100%";
   languageNotFound.style.flex = 1;
@@ -24,6 +23,11 @@ if (!language) {
   languageNotFound.textContent =
     "Hai scritto male il nome della materia, prova ad inserire bene il nome!";
   main.appendChild(languageNotFound);
+}
+
+console.log({ language, type });
+if (!language) {
+  notFoundLanguage();
 } else {
   // Add Language Name to HTML.
   const lang = document.createElement("h1");
