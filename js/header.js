@@ -1,6 +1,6 @@
 const header = `
   <header class="header" id="header">
-    <a href="/" class="logo">QuizCoder</a>
+    <a href="./" class="logo">QuizCoder</a>
     
     <button class="burger" id="burger-btn" aria-label="Menu">
       <span></span>
@@ -8,11 +8,11 @@ const header = `
       <span></span>
     </button>
     <nav class="nav" id="nav-menu">
-      <a href="/">HOME</a>
-      <a href="/true-or-false.html">VERO O FALSO</a>
-      <a href="/multiple-choice.html">SCELTA MULTIPLA</a>
-      <a href="/last-quizzes.html">ULTIMI QUIZZES</a>
-      <a id="subscribe-anchor" href="/subscribe.html">ISCRIVITI!</a>
+      <a href="./">HOME</a>
+      <a href="./true-or-false.html">VERO O FALSO</a>
+      <a href="./multiple-choice.html">SCELTA MULTIPLA</a>
+      <a href="./last-quizzes.html">ULTIMI QUIZZES</a>
+      <a id="subscribe-anchor" href="./subscribe.html">ISCRIVITI!</a>
     </nav>
   </header>
 `;

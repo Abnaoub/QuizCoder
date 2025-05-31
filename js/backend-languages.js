@@ -8,7 +8,7 @@ fetch("./data/back-end-languages.json")
     for (let language of data.languages) {
       let a = document.createElement("a");
       a.className = "language-item";
-      a.href = `/multiple-choice-quizzes.html?language=${language.slug}&type=multiple-choice`;
+      a.href = `./multiple-choice-quizzes.html?language=${language.slug}&type=multiple-choice`;
       a.style.backgroundColor = language.color;
       let titleElement = document.createElement("h2");
       titleElement.textContent = language.name;

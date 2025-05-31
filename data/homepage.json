@@ -3,13 +3,13 @@
     {
       "id": 1,
       "name": "SCELTA MULTIPLA",
-      "slug": "/multiple-choice.html",
+      "slug": "./multiple-choice.html",
       "description": "Testa la tua conoscenza dei linguaggi usati lato server con domande a scelta multipla su Node.js, Python, PHP e SQL"
     },
     {
       "id": 2,
       "name": "VERO O FALSO",
-      "slug": "/true-or-false.html",
+      "slug": "./true-or-false.html",
       "description": "Riconosci subito il vero dal falso? Metti alla prova le tue basi su HTML, CSS e JavaScript e Vue.js con questi quiz veloci."
     }
   ]

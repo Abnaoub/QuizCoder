@@ -18,7 +18,7 @@ document.getElementById("emailForm").addEventListener("submit", function (e) {
           message.textContent = data.message;
           document.getElementById("emailForm").reset();
           localStorage.setItem("subscribed", "true");
-          location.href = "/last-quizzes.html";
+          location.href = "./last-quizzes.html";
         } else {
           message.style.color = "red";
           message.textContent = data.error || data.details;

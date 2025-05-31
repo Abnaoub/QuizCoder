@@ -3,7 +3,7 @@ const lastQuizzesEl = document.getElementById("last-quizzes");
 const lastQuizzes = localStorage.getItem("last-quizzes");
 const isUserSubscribed = localStorage.getItem("subscribed");
 if (!isUserSubscribed) {
-  location.href = '/subscribe.html'
+  location.href = './subscribe.html'
 } else if (!lastQuizzes) {
   const NotFoundParagraph = document.createElement("p");
   NotFoundParagraph.textContent = "Nessun quiz trovato";
@@ -18,7 +18,7 @@ if (!isUserSubscribed) {
     quizEl.className = "card";
     quizEl.style.position = "relative";
     quizEl.style.overflow = "hidden";
-    quizEl.href = `/questions.html?quiz_slug=${quiz.slug}`;
+    quizEl.href = `./questions.html?quiz_slug=${quiz.slug}`;
 
     // HTML - Quiz 1
     const quizLanguage = document.createElement("p");

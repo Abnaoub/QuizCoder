@@ -171,7 +171,7 @@ function initQuiz() {
 
   function finishQuiz() {
     if (isQuizCompleted) {
-      location.href = "/last-quizzes.html";
+      location.href = "./last-quizzes.html";
     } else {
       saveQuiz();
     }
@@ -218,7 +218,7 @@ function initQuiz() {
       });
       localStorage.setItem("last-quizzes", JSON.stringify(parsed));
     }
-    location.href = "/last-quizzes.html";
+    location.href = "./last-quizzes.html";
   }
 
   prevBtn.addEventListener("click", () => {

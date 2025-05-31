@@ -67,7 +67,7 @@ if (!language) {
         if (isDone) {
           quizItem.classList.add("isDisabled");
         }
-        quizItem.href = isDone ? "" : `/questions.html?quiz_slug=${quiz.slug}`;
+        quizItem.href = isDone ? "" : `./questions.html?quiz_slug=${quiz.slug}`;
         quizItem.textContent = quiz.name;
 
         const tagEl = document.createElement("div");

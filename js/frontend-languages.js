@@ -6,7 +6,7 @@ fetch("./data/front-end-languages.json")
     for (let language of data.languages) {
       let a = document.createElement("a");
       a.className = "language-item";
-      a.href = `/true-or-false-quizzes.html?language=${language.slug}&type=true-or-false`;
+      a.href = `./true-or-false-quizzes.html?language=${language.slug}&type=true-or-false`;
       a.style.backgroundColor = language.color;
       let titleElement = document.createElement("h2");
       titleElement.textContent = language.name;
