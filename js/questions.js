@@ -20,8 +20,8 @@ const questionsPath = isFrontendQuiz
   ? "../data/true-or-false-questions.json"
   : "../data/multiple-choice-questions.json";
 const quizPath = isFrontendQuiz
-  ? "../data/quizzes-true-or-false.json"
-  : "../data/quizzes-multiple-choice.json";
+  ? "./data/quizzes-true-or-false.json"
+  : "./data/quizzes-multiple-choice.json";
 let allQuestions;
 let isQuizCompleted;
 
