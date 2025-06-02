@@ -36,7 +36,7 @@ if (!language) {
 
   document.querySelector("main").insertAdjacentElement("afterbegin", lang);
 
-  fetch("../data/quizzes-multiple-choice.json")
+  fetch("./data/quizzes-multiple-choice.json")
     .then((response) => {
       console.log({ response });
       if (!response.ok) {
