@@ -29,7 +29,7 @@ if (!language) {
 
   document.querySelector("main").insertAdjacentElement("afterbegin", lang);
 
-  fetch("../data/quizzes-true-or-false.json")
+  fetch("./data/quizzes-true-or-false.json")
     .then((response) => {
       console.log({ response });
       if (!response.ok) {
