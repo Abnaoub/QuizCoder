@@ -17,8 +17,8 @@ const backendLanguages = ["nodejs", "python", "php", "sql"];
 const currentLanguage = quizSlug.split("_")[0];
 const isFrontendQuiz = frontendLanguages.includes(currentLanguage);
 const questionsPath = isFrontendQuiz
-  ? "../data/true-or-false-questions.json"
-  : "../data/multiple-choice-questions.json";
+  ? "./data/true-or-false-questions.json"
+  : "./data/multiple-choice-questions.json";
 const quizPath = isFrontendQuiz
   ? "./data/quizzes-true-or-false.json"
   : "./data/quizzes-multiple-choice.json";
